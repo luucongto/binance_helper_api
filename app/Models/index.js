@@ -14,6 +14,7 @@ const sequelize = new Sequelize('socket', 'root', '', {
 
 const User = sequelize.define('user', {
   username: Sequelize.STRING,
+  password: Sequelize.STRING,
   socketid: Sequelize.STRING,
   roomsocketid: Sequelize.STRING,
 });
