@@ -27,7 +27,7 @@ class BaseApi {
       this.user.save()
     }
     if (this.room) {
-      this.room.num --
+      this.room.num--
       if (this.room.num <= 0) {
         this.room.destroy()
       } else {
