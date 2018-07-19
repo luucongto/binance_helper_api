@@ -1,3 +1,4 @@
+import autobind from 'auto-bind'
 const randomstring = require('randomstring')
 const {User, Room} = require('../Models/index')
 class BaseApi {
@@ -15,6 +16,7 @@ class BaseApi {
       self.user = user
       self.setup(self)
     })
+    autobind(this)
   }
 
   _sendPrivate (msg) {
@@ -36,7 +38,8 @@ class BaseApi {
     }
   }
 
-  setup (self) {
+  setup () {
+    let self = this
     let socket = self.socket
     let io = self.io
     let user = self.user

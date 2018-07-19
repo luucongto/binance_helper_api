@@ -1,14 +1,13 @@
 import {BinanceUser, UserOrder} from '../Models'
 import BinancePrivateApi from './Apis/BinancePrivateApi'
 import BinanceBot from '../Bot/BinanceBot'
+import autoBind from 'auto-bind'
 class BinanceService {
   constructor (req) {
     this.req = req
     this.binancePrivateApi = req.binancePrivateApi
     this.userId = req.user.id
-    this.getBinanceApi = this.getBinanceApi.bind(this)
-    this.allOrders = this.allOrders.bind(this)
-    this.commandBot = this.commandBot.bind(this)
+    autoBind(this)
   }
   getBinanceApi () {
     const user = this.req.user.get()
@@ -48,35 +47,32 @@ class BinanceService {
     return this.binancePrivateApi.accountInfo()
     .then(result => {
       return result
-    }).catch(error => {
-      console.error(error)
-      throw (new Error('accountInfo'))
     })
   }
-  placeOrder (params) {
-    if (params.type === 'TRAILING_STOP') {
-      return UserOrder.create({
-        user_id: params.user_id,
-        pair: params.pair,
-        price: params.expect_price || 0,
-        quantity: params.quantity,
-        mode: params.mode,
-        type: params.type,
-        status: 'watching',
-        expect_price: params.expect_price || 0
-      }).then(result => {
-        BinanceBot.addTrailingStopOrder([result], false)
-        return result.get()
+  apiSetting (params) {
+    if (params.api_key !== '' || params.api_secret !== '') {
+      console.log(params)
+      return BinanceUser.findByPrimary(this.userId).then(binanceUser => {
+        if (binanceUser) {
+          if (params.api_key) binanceUser.api_key = params.api_key
+          if (params.api_secret) binanceUser.api_secret = params.api_secret
+          return binanceUser.save()
+        } else {
+          throw (new Error('binance user not found'))
+        }
+      }).then(binanceUser => {
+        return {
+          success: true
+        }
+      })
+    } else {
+      return new Promise((resolve, reject) => {
+        resolve({
+          success: false,
+          error: 'Empty api key and api secret'
+        })
       })
     }
-
-    // return this.binancePrivateApi.placeLimit(params)
-    // .then(result => {
-    //   return result
-    // }).catch(error => {
-    //   console.error(error)
-    //   throw (new Error('placeOrder'))
-    // })
   }
   updateOrderStatus (params) {
     return UserOrder.findOne({
@@ -84,9 +80,13 @@ class BinanceService {
         id: params.id
       }
     }).then(result => {
-      result.status = params.status === 'watching' ? params.status : 'hold'
+      result.status = params.status
       result.save()
-      if (params.status === 'watching') { BinanceBot.addTrailingStopOrder([result], false) }
+      if (params.status === 'watching') {
+        BinanceBot.setupOne(result, this.binancePrivateApi, false)
+      } else {
+        BinanceBot.removeOne(result)
+      }
       return [result]
     }).catch(error => {
       console.error(error)
@@ -103,7 +103,7 @@ class BinanceService {
   }
   commandBot (params) {
     return UserOrder.findAll({where: {user_id: this.userId, status: 'watching'}}).then(result => {
-      BinanceBot.addTrailingStopOrder(result, true)
+      BinanceBot.addTrailingStopOrder(result, this.binancePrivateApi, true)
       return result
     }).catch(error => {
       console.error(error)

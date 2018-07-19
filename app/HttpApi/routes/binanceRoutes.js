@@ -13,10 +13,16 @@ let routes = [
     func: (req, res) => {
       const binanceService = new BinanceService(req)
       binanceService.allOrders().then(result => {
-        res.send(result)
+        res.send({
+          success: true,
+          data: result
+        })
       }).catch(error => {
-        console.error(error)
-        res.sendStatus(501)
+        console.error('[BinaneRoutes]', error)
+        res.send({
+          success: false,
+          error: error
+        })
       })
     }
   },
@@ -26,51 +32,94 @@ let routes = [
     func: (req, res) => {
       const binanceService = new BinanceService(req)
       binanceService.accountInfo().then(result => {
-        res.send(result)
+        res.send({
+          success: true,
+          data: result
+        })
       }).catch(error => {
-        console.error(error)
-        res.sendStatus(501)
+        console.error('[BinaneRoutes]', error)
+        res.send({
+          success: false,
+          error: error
+        })
       })
     }
   },
   {
     method: 'post',
-    endpoint: '/placeOrder',
+    endpoint: '/apiSetting',
     func: (req, res) => {
       const binanceService = new BinanceService(req)
-      binanceService.placeOrder({
-        user_id: req.user.id,
-        pair: req.body.pair,
-        price: parseFloat(req.body.price),
-        quantity: parseFloat(req.body.quantity),
-        mode: req.body.mode,
-        type: req.body.type,
-        expect_price: parseFloat(req.body.expect_price || 0)
+      binanceService.apiSetting({
+        api_key: req.body.apiKey,
+        api_secret: req.body.apiSecret
       }).then(result => {
-        res.send(result)
+        res.send({
+          success: true,
+          data: result
+        })
       }).catch(error => {
-        console.error(error)
-        res.sendStatus(501)
+        console.error('[BinaneRoutes]', error)
+        res.send({
+          success: false,
+          error: {
+            msg: error
+          }
+        })
       })
     }
   },
-  {
-    method: 'post',
-    endpoint: '/updateOrder',
-    func: (req, res) => {
-      const binanceService = new BinanceService(req)
-      binanceService.updateOrderStatus({
-        id: req.body.orderId,
-        status: req.body.status
+  // {
+  //   method: 'post',
+  //   endpoint: '/placeOrder',
+  //   func: (req, res) => {
+  //     const binanceService = new BinanceService(req)
+  //     binanceService.placeOrder({
+  //       user_id: req.user.id,
+  //       pair: req.body.pair,
+  //       price: parseFloat(req.body.price),
+  //       quantity: parseFloat(req.body.quantity),
+  //       mode: req.body.mode,
+  //       type: req.body.type,
+  //       offset: parseFloat(req.body.offset),
+  //       expect_price: parseFloat(req.body.expect_price || 0)
+  //     }).then(result => {
+  //       res.send({
+  //         success: true,
+  //         data: result
+  //       })
+  //     }).catch(error => {
+  //       console.error('[BinaneRoutes]', error)
+  //       res.send({
+  //         success: false,
+  //         error: error
+  //       })
+  //     })
+  //   }
+  // },
+  // {
+  //   method: 'post',
+  //   endpoint: '/updateOrder',
+  //   func: (req, res) => {
+  //     const binanceService = new BinanceService(req)
+  //     binanceService.updateOrderStatus({
+  //       id: req.body.orderId,
+  //       status: req.body.status
 
-      }).then(result => {
-        res.send(result)
-      }).catch(error => {
-        console.error(error)
-        res.sendStatus(501)
-      })
-    }
-  },
+  //     }).then(result => {
+  //       res.send({
+  //         success: true,
+  //         data: result
+  //       })
+  //     }).catch(error => {
+  //       console.error('[BinaneRoutes]', error)
+  //       res.send({
+  //         success: false,
+  //         error: error
+  //       })
+  //     })
+  //   }
+  // },
   {
     method: 'post',
     endpoint: '/commandBot',
@@ -79,10 +128,16 @@ let routes = [
       binanceService.commandBot({
         command: req.body.command
       }).then(result => {
-        res.send(result)
+        res.send({
+          success: true,
+          data: result
+        })
       }).catch(error => {
-        console.error(error)
-        res.sendStatus(501)
+        console.error('[BinaneRoutes]', error)
+        res.send({
+          success: false,
+          error: error
+        })
       })
     }
   }
@@ -103,11 +158,17 @@ let getBinanceApi = (req, res, next) => {
       next()
     } else {
       console.log('no user in BinanceUser')
-      res.sendStatus(401)
+      res.send({
+        success: false,
+        error: 'no user in BinanceUser'
+      })
     }
   }).catch(error => {
-    console.error('getBinanceApi', error)
-    res.sendStatus(401)
+    console.error('[BinaneRoutes]', 'getBinanceApi', error)
+    res.send({
+      success: false,
+      error: error.message
+    })
   })
 }
 

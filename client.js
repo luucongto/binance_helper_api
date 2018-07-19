@@ -1,5 +1,5 @@
 const io = require('socket.io-client')
-var socket = io('http://localhost:3000')
+var socket = io('http://localhost:3000', {query: 'auth_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0b2FkbWluIiwicGFzc3dvcmQiOiIkMmIkMTAkWXNWRmYzUFdPN3hyaC9xaTJBdWVCT203UFNaZ3JwQ01rbnJGQnFMZ09lNmhnWk5qc3B2ek8iLCJzb2NrZXRpZCI6bnVsbCwicm9vbXNvY2tldGlkIjpudWxsLCJjcmVhdGVkQXQiOm51bGwsInVwZGF0ZWRBdCI6bnVsbH0.QQqLCzuo3jPbr-5mP1lVGf6fSvLFTbMsH5EB0G-PA7o'})
 socket.on('time', function (timeString) {
   console.log('Server time: ' + timeString)
 })

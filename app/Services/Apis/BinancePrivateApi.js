@@ -5,7 +5,7 @@ class BinancePrivateApi {
     this.privateClient = new Binance().options({
       APIKEY: apiKey,
       APISECRET: apiSecret,
-      // test: true,
+      test: !process.env.REAL_API,
       useServerTime: true
 
     })
@@ -17,7 +17,7 @@ class BinancePrivateApi {
     return new Promise((resolve, reject) => {
       this.privateClient.openOrders(false, (error, openOrders) => {
         if (error) {
-          reject(error)
+          reject(JSON.parse(error.body).msg)
         }
         resolve(openOrders)
       })
@@ -27,7 +27,7 @@ class BinancePrivateApi {
     return new Promise((resolve, reject) => {
       this.privateClient.balance((error, balances) => {
         if (error) {
-          reject(error)
+          reject(JSON.parse(error.body).msg)
         }
         resolve(balances)
       })
@@ -42,15 +42,20 @@ class BinancePrivateApi {
       }
       let callback = (error, response) => {
         if (error) {
-          reject(error)
+          reject(JSON.parse(error.body).msg)
           return
         }
         console.log(`Market ${data.mode} response`, response)
         console.log('order id: ' + response.orderId)
         let total = 0
-        response.fills.forEach(element => {
-          total += parseFloat(element.price) * parseFloat(element.qty)
-        })
+        if (response.fills) {
+          response.fills.forEach(element => {
+            total += parseFloat(element.price) * parseFloat(element.qty)
+          })
+        } else {
+          total = data.price
+          response.executedQty = 1
+        }
         response.price = total / parseFloat(response.executedQty)
         resolve(response)
       }
@@ -84,7 +89,7 @@ class BinancePrivateApi {
       let callback = (error, response) => {
         if (error) {
           console.log('error', error.body)
-          reject(error.body)
+          reject(JSON.parse(error.body).msg)
           return
         }
         console.log(`${data.options.type} ${data.mode} response`, response)
