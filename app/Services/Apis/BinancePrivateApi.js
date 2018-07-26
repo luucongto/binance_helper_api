@@ -1,4 +1,5 @@
 import Binance from 'node-binance-api'
+import BinanceApiNode from 'binance-api-node'
 class BinancePrivateApi {
   constructor (apiKey, apiSecret) {
     // Authenticated client, can make signed calls
@@ -9,19 +10,16 @@ class BinancePrivateApi {
       useServerTime: true
 
     })
+    this.publicClient = BinanceApiNode({
+      apiKey: apiKey,
+      apiSecret: apiSecret
+    })
   }
   verifyOrder (data) {
     return data.quantity > 0 && data.pair && (data.mode === 'sell' || data.mode === 'buy')
   }
-  allOrders () {
-    return new Promise((resolve, reject) => {
-      this.privateClient.openOrders(false, (error, openOrders) => {
-        if (error) {
-          reject(JSON.parse(error.body).msg)
-        }
-        resolve(openOrders)
-      })
-    })
+  allPrices () {
+    return this.publicClient.prices()
   }
   accountInfo (res) {
     return new Promise((resolve, reject) => {
@@ -45,8 +43,7 @@ class BinancePrivateApi {
           reject(JSON.parse(error.body).msg)
           return
         }
-        console.log(`Market ${data.mode} response`, response)
-        console.log('order id: ' + response.orderId)
+        console.warn(`Market ${JSON.stringify(data)} response ${JSON.stringify(response)}`)
         let total = 0
         if (response.fills) {
           response.fills.forEach(element => {
@@ -67,7 +64,6 @@ class BinancePrivateApi {
     })
   }
   placeLimit (data = {}) {
-    console.log('data', data)
     data.options = {
       type: 'LIMIT'
     }
@@ -81,6 +77,7 @@ class BinancePrivateApi {
     return this._placeOrder(data)
   }
   _placeOrder (data) {
+    console.warn(`Order ${JSON.stringify(data)}`)
     return new Promise((resolve, reject) => {
       if (!this.verifyOrder(data)) {
         reject(new Error('invalid order data'))
@@ -88,12 +85,12 @@ class BinancePrivateApi {
       }
       let callback = (error, response) => {
         if (error) {
-          console.log('error', error.body)
+          console.error(`[BinancePrivateApi] ${JSON.stringify(data)} ${JSON.stringify(error.body)}`)
           reject(JSON.parse(error.body).msg)
           return
         }
-        console.log(`${data.options.type} ${data.mode} response`, response)
-        console.log('order id: ' + response.orderId)
+
+        console.warn(`Order: ${data.id} response: ${JSON.stringify(response)}`)
         resolve(response)
       }
       if (data.mode === 'sell') {

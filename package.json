@@ -21,6 +21,7 @@
     "auto-bind": "^1.2.1",
     "babel-eslint": "^8.2.6",
     "bcrypt": "^2.0.1",
+    "binance-api-node": "^0.8.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",

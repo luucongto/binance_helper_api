@@ -7,7 +7,7 @@ class DailyStrategyTest {
   constructor () {
     // Authenticated client, can make signed calls
     this.binance = new Binance()
-    this.emptyTimeout = 0
+    this.emptyTimeout = 60000
     this.watching = {}
   }
 
@@ -24,23 +24,12 @@ class DailyStrategyTest {
           balances.forEach(balance => {
             self.setupOne(balance)
           })
-        } else {
-          self.emptyTimeout += 10000
-          setTimeout(() => {
-            self.start()
-          }, self.emptyTimeout)
         }
       }).catch(e => {
-        console.log('24h', 'Met Error, restarting...')
-        setTimeout(() => {
-          self.start()
-        }, 5000)
+        console.log('24h', 'Met Error ' + JSON.stringify(e))
       })
     } catch (e) {
-      console.log('24h', 'Met Error, restarting...')
-      setTimeout(() => {
-        self.start()
-      }, 5000)
+      console.log('24h', 'Met Error ' + JSON.stringify(e))
     }
   }
   setupOne (balance) {

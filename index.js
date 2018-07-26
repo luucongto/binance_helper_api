@@ -7,6 +7,7 @@ import {sequelize} from './app/Models'
 import BinanceBot from './app/Bot/BinanceBot'
 import BinanceTestTrade from './app/Bot/BinanceTestTrade'
 import DailyStrategyTest from './app/Bot/DailyStrategyTest'
+import moment from 'moment'
 const express = require('express')
 const PORT = process.env.PORT || 3000
 // init db
@@ -102,6 +103,9 @@ io.on('connection', (socket) => {
   }
 })
 
-setInterval(() => io.emit('time', new Date().toTimeString()), 1000)
+setInterval(() => io.emit('server_setting', {
+  time: moment().format('MM/DD HH:mm'),
+  type: process.env.REAL_API
+}))
 server.listen(PORT, () => console.log(`Listening RESTFUL on ${PORT}`))
 module.exports = app

@@ -17,6 +17,8 @@ const sequelize = new Sequelize(connectionString)
 
 const User = sequelize.define('user', {
   username: Sequelize.STRING,
+  name: Sequelize.STRING,
+  logged_at: Sequelize.INTEGER,
   password: Sequelize.STRING,
   socketid: Sequelize.STRING,
   roomsocketid: Sequelize.STRING
@@ -37,6 +39,7 @@ const BinanceUser = sequelize.define('binance_user', {
 const UserOrder = sequelize.define('user_order', {
   user_id: {type: Sequelize.INTEGER},
   balance_id: Sequelize.INTEGER,
+  binance_order_id: Sequelize.INTEGER,
   type: Sequelize.STRING,
   price: Sequelize.FLOAT,
   expect_price: Sequelize.FLOAT,

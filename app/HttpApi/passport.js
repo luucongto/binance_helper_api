@@ -25,7 +25,10 @@ opts.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme('jwt')
 opts.secretOrKey = config.secret
 passport.use(new JwtStrategy(opts, function (jwtPayload, done) {
   User.findOne({
-    where: {id: jwtPayload.id}
+    where: {
+      id: jwtPayload.id,
+      logged_at: jwtPayload.logged_at
+    }
   }).then(user => {
     if (user) {
       done(null, user)

@@ -9,10 +9,10 @@ var router = express.Router()
 let routes = [
   {
     method: 'get',
-    endpoint: '/allOrders',
+    endpoint: '/allPrices',
     func: (req, res) => {
       const binanceService = new BinanceService(req)
-      binanceService.allOrders().then(result => {
+      binanceService.allPrices().then(result => {
         res.send({
           success: true,
           data: result

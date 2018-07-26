@@ -1,4 +1,5 @@
 import bcrypt from 'bcrypt'
+import passport from 'passport'
 var User = require('../../Models').User
 var settings = require('../../config/config')
 var jwt = require('jsonwebtoken')
@@ -15,7 +16,6 @@ let routes = [{
         username: req.body.username
       }
     }).then(user => {
-      user = user.get()
       if (!user) {
         res.status(401).send({
           success: false,
@@ -26,11 +26,18 @@ let routes = [{
         bcrypt.compare(req.body.password, user.password, function (err, isMatch) {
           if (isMatch && !err) {
             // if user is found and password is right create a token
-            var token = jwt.sign(JSON.stringify(user), settings.secret)
+            let now = parseInt(new Date().getTime() / 1000)
+            user.logged_at = now
+            user.save()
+            var token = jwt.sign(JSON.stringify({
+              id: user.id,
+              logged_at: now
+            }), settings.secret)
             // return the information including token as JSON
             res.json({
               success: true,
-              token: token
+              token: token,
+              name: user.name
             })
           } else {
             res.status(401).send({
@@ -50,6 +57,21 @@ let routes = [{
   }
 }
 ]
+
+router.get('/logout', [passport.authenticate('jwt')], (req, res) => {
+  User.findOne({
+    where: {
+      id: req.user.id
+    }
+  }).then(user => {
+    user.logged_at = new Date().getTime()
+    user.save()
+    res.send({
+      success: true,
+      data: 'Logged out'
+    })
+  })
+})
 
 routes.forEach(e => {
   switch (e.method) {

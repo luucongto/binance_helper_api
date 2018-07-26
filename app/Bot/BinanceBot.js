@@ -3,7 +3,6 @@ import BinancePrivateApi from '../Services/Apis/BinancePrivateApi'
 import BinanceTestTrade from './BinanceTestTrade'
 import {BinanceUser, UserOrder} from '../Models'
 import {Op} from 'sequelize'
-import { resolve } from 'path'
 class BinanceBot {
   constructor () {
     // Authenticated client, can make signed calls
@@ -12,6 +11,24 @@ class BinanceBot {
     this.watchingSockets = {}
     this.activeUsers = {}
     this.watch = this.watch.bind(this)
+  }
+  _refresh (userId) {
+    let self = this
+    UserOrder.findAll({
+      where: {
+        user_id: userId
+      }
+    }).then(orders => {
+      self.emitOrders(userId, orders)
+    })
+  }
+  emitOrders (userId, orders) {
+    if (!userId) {
+      console.error('Emit order null userid')
+    }
+    if (this.activeUsers[userId] && this.activeUsers[userId].socket) {
+      this.activeUsers[userId].socket.emit('update_order', orders)
+    }
   }
   setUser (data) {
     let self = this
@@ -23,14 +40,7 @@ class BinanceBot {
         api: null
       }
     }
-    UserOrder.findAll({
-      where: {
-        user_id: data.id
-      }
-    }).then(orders => {
-      data.socket.emit('update_order', orders)
-    })
-
+    this._refresh(data.id)
     data.socket.on('update_order', params => {
       switch (params.command) {
         case 'placeOrder':
@@ -48,27 +58,22 @@ class BinanceBot {
             expect_price: parseFloat(params.expect_price || 0)
           }).then(order => {
             self.setupOne(order)
-            data.socket.emit('update_order', [order])
+            self.emitOrders(order.user_id, [order])
           })
           break
         case 'updateOrder':
           UserOrder.findById(params.id).then(order => {
             if (order) {
               order.status = params.status
+              self.updateOne(order)
               order.save().then(order => {
-                data.socket.emit('update_order', [order])
+                self.emitOrders(order.user_id, [order])
               })
             }
           })
           break
         case 'refresh':
-          UserOrder.findAll({
-            where: {
-              user_id: data.id
-            }
-          }).then(orders => {
-            data.socket.emit('update_order', orders)
-          })
+          self._refresh(data.id)
           break
       }
     })
@@ -119,14 +124,19 @@ class BinanceBot {
     }
   }
 
+  updateOne (order) {
+    if (this.watchingSockets[order.pair] && this.watchingSockets[order.pair].orders[order.id]) {
+      this.watchingSockets[order.pair].orders[order.id] = order
+      return true
+    }
+    return false
+  }
   watch (trades) {
     let {
       s: symbol,
-      p: price,
-      q: quantity
+      p: price
     } = trades
     price = parseFloat(price)
-    quantity = parseFloat(quantity)
     let orders = this.watchingSockets[symbol].orders
     let watchs = Object.keys(orders)
     let self = this
@@ -157,22 +167,13 @@ class BinanceBot {
             if (!e.offset) e.offset = price - e.expect_price
             if (e.price + e.offset <= price) {
               e.price = price - e.offset
-              console.log(`expect order ${e.id} ${e.mode} at ${e.price} offset ${e.offset}`)
+              console.debug(`expect order ${e.id} ${e.mode} at ${e.price} offset ${e.offset}`)
               // save to db
               self.updateStatus(e)
               e.save()
             } else if (e.price > price) {
               // trigger sell market
-              e.status = 'ordering'
-              e.price = price
-              console.log(`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
-              this.order(e).then(response => {
-                e.price = response.price
-                e.status = 'done'
-                self.updateStatus(e)
-                e.save()
-                delete orders[e.id]
-              })
+              self.triggerOrder(e, price, orders)
             }
             break
           case 'buy':
@@ -180,22 +181,13 @@ class BinanceBot {
             if (!e.offset) e.offset = e.expect_price - price
             if (e.price - e.offset >= price) {
               e.price = price + e.offset
-              console.log(`expect order ${e.id} ${e.mode} at ${e.price} offset ${e.offset}`)
+              console.debug(`expect order ${e.id} ${e.mode} at ${e.price} offset ${e.offset}`)
               // save to db
               self.updateStatus(e)
               e.save()
             } else if (e.price < price) {
-              // trigger sell market
-              e.status = 'ordering'
-              e.price = price
-              console.log(`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
-              this.order(e).then(response => {
-                e.price = response.price
-                e.status = 'done'
-                self.updateStatus(e)
-                e.save()
-                delete orders[e.id]
-              })
+              // trigger buy market
+              self.triggerOrder(e, price, orders)
             }
             break
         }
@@ -205,20 +197,52 @@ class BinanceBot {
       delete this.watchingSockets[symbol]
     }
   }
-  placeMarket (orderData) {
-    if (orderData.balance_id) {
-      return BinanceTestTrade.placeMarket(orderData)
+  triggerOrder (e, price, orders) {
+    let self = this
+    let callback = (e, response) => {
+      response.price = parseFloat(response.price)
+      if (response.price > 0) {
+        e.binance_order_id = response.orderId || 0
+        e.price = response.price
+        e.status = 'done'
+        self.updateStatus(e)
+        e.save()
+        if (e.balance_id) {
+          BinanceTestTrade.postPlaceOrder(e, response)
+        }
+        delete orders[e.id]
+        console.info(`[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
+      } else {
+        e.status = 'watching'
+        e.save()
+        console.info(`[${e.type}][false] trigger order ${e.id} market ${e.mode} at ${response.priced} offset ${e.offset} res ${JSON.stringify(response)}`)
+      }
     }
+
+    e.status = 'ordering'
+    e.price = price
+    console.info(`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
+    this.order(e).then(response => {
+      callback(e, response)
+    })
+  }
+
+  _mockPlaceMarket (orderData) {
     return new Promise((resolve, reject) => {
       resolve({
-        price: orderData.price
+        executedQty: orderData.quantity,
+        price: orderData.mode === 'buy' ? orderData.price * 1.001 : orderData.price * 0.999
       })
     })
   }
   order (orderData) {
+    if (!process.env.REAL_API) {
+      return this._mockPlaceMarket(orderData)
+    }
+
     switch (orderData.type) {
       case 'TEST':
-        return this.placeMarket(orderData)
+        return this._mockPlaceMarket(orderData)
       case 'REAL':
         if (this.activeUsers[orderData.user_id].api) {
           return this.activeUsers[orderData.user_id].api.placeMarket(orderData)
@@ -229,15 +253,15 @@ class BinanceBot {
           return privateClient.placeMarket(orderData)
         })
       default:
-        console.error('Order error, invalid type! ', orderData)
-        break
+        return new Promise((resolve, reject) => {
+          console.error('Order error, invalid type! ', orderData)
+          reject(new Error('Order error, invalid type! '))
+        })
     }
   }
 
   updateStatus (order) {
-    if (this.activeUsers[order.user_id] && this.activeUsers[order.user_id].socket) {
-      this.activeUsers[order.user_id].socket.emit('update_order', [order])
-    }
+    this.emitOrders(order.user_id, [order])
   }
 }
 

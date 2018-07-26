@@ -2,6 +2,7 @@ import {BinanceUser, UserOrder} from '../Models'
 import BinancePrivateApi from './Apis/BinancePrivateApi'
 import BinanceBot from '../Bot/BinanceBot'
 import autoBind from 'auto-bind'
+
 class BinanceService {
   constructor (req) {
     this.req = req
@@ -24,24 +25,8 @@ class BinanceService {
       throw (new Error('binance user error'))
     })
   }
-  allOrders () {
-    return UserOrder.findAll({
-      where: {
-        user_id: this.userId
-      }
-    }).then(result => {
-      return result
-    }).catch(error => {
-      console.error(error)
-      throw (new Error('AllOrders'))
-    })
-    // return this.binancePrivateApi.allOrders()
-    // .then(result => {
-    //   return result
-    // }).catch(error => {
-    //   console.error(error)
-    //   throw (new Error('AllOrders'))
-    // })
+  allPrices () {
+    return this.binancePrivateApi.allPrices()
   }
   accountInfo () {
     return this.binancePrivateApi.accountInfo()
@@ -51,7 +36,6 @@ class BinanceService {
   }
   apiSetting (params) {
     if (params.api_key !== '' || params.api_secret !== '') {
-      console.log(params)
       return BinanceUser.findByPrimary(this.userId).then(binanceUser => {
         if (binanceUser) {
           if (params.api_key) binanceUser.api_key = params.api_key

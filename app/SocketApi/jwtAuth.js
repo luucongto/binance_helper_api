@@ -8,7 +8,12 @@ let authCheck = socketJwtAuth.authenticate({
   // you done callback will not include any payload data now
   // if no token was supplied
   if (payload && payload.id) {
-    User.findById(payload.id).then(user => {
+    User.findOne({
+      where: {
+        id: payload.id,
+        logged_at: payload.logged_at
+      }
+    }).then(user => {
       if (!user) {
         // return fail with an error message
         console.log('jwtAuth no user ', payload)
