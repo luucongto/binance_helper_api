@@ -18,10 +18,25 @@ const sequelize = new Sequelize(connectionString)
 const User = sequelize.define('user', {
   username: Sequelize.STRING,
   name: Sequelize.STRING,
+  email: Sequelize.STRING,
+  google_id: Sequelize.STRING,
+  image_url: Sequelize.STRING,
   logged_at: Sequelize.INTEGER,
   password: Sequelize.STRING,
   socketid: Sequelize.STRING,
   roomsocketid: Sequelize.STRING
+}, {
+  indexes: [
+    // Create a unique index on email
+    {
+      unique: true,
+      fields: ['email', 'username', 'google_id']
+    },
+    { name: 'username', fields: ['username'] },
+    { name: 'email', fields: ['email'] },
+    { name: 'google_id', fields: ['google_id'] }
+  ]
+
 })
 
 const Room = sequelize.define('room', {
@@ -60,7 +75,7 @@ const TestBalance = sequelize.define('test_balance', {
   currency_num: Sequelize.FLOAT,
   asset_num: Sequelize.FLOAT,
   offset: {type: Sequelize.FLOAT},
-  strategy: Sequelize.STRING,
+  type: Sequelize.STRING,
   status: Sequelize.STRING
 })
 

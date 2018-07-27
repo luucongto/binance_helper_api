@@ -6,15 +6,14 @@ import {auth, baseRoutes, binanceRoutes, testBalance} from './app/HttpApi/routes
 import {sequelize} from './app/Models'
 import BinanceBot from './app/Bot/BinanceBot'
 import BinanceTestTrade from './app/Bot/BinanceTestTrade'
-import DailyStrategyTest from './app/Bot/DailyStrategyTest'
 import moment from 'moment'
+require('dotenv').config()
 const express = require('express')
 const PORT = process.env.PORT || 3000
 // init db
 sequelize.sync().then(() => {
   BinanceBot.start()
   BinanceTestTrade.start()
-  DailyStrategyTest.start()
 })
 // Http Server
 var app = express()
@@ -23,7 +22,6 @@ var bodyParser = require('body-parser')
 var createError = require('http-errors')
 var path = require('path')
 var cookieParser = require('cookie-parser')
-var bodyParser = require('body-parser')
 var logger = require('morgan')
 
 // view engine setup
@@ -78,7 +76,6 @@ app.use(function (err, req, res, next) {
 // IO server
 var server = require('http').createServer(app)
 const socketIO = require('socket.io')
-const SocketApi = require('./app/SocketApi/BaseApi')
 // const server = express()
 //   // .use((req, res) => res.sendFile(INDEX))
 //   .listen(PORT, () => console.log(`Listening Socket on ${ PORT }`));

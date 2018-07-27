@@ -17,7 +17,7 @@ class DailyStrategyTest {
       console.log('24h', 'Testing....')
       TestBalance.findAll({
         where: {
-          strategy: '24h'
+          type: '24h'
         }
       }).then(balances => {
         if (balances.length) {

@@ -40,7 +40,7 @@ class BinanceTestTrade {
             asset_num: parseFloat(params.asset_num || 0),
             offset: parseFloat(params.offset || 0),
             status: 'watching',
-            strategy: params.strategy
+            type: params.type
           }).then(balance => {
             self.addToWatchList(balance)
             data.socket.emit('auto_order', [balance])
@@ -77,7 +77,6 @@ class BinanceTestTrade {
       console.log('[trailing] Testing....')
       TestBalance.findAll({
         where: {
-          strategy: 'trailing',
           status: 'watching'
         }
       }).then(balances => {
@@ -178,7 +177,7 @@ class BinanceTestTrade {
     let self = this
     let newOrder = {
       user_id: balance.user_id,
-      type: balance.strategy,
+      type: balance.type,
       mode: null,
       price: 0,
       status: 'waiting',

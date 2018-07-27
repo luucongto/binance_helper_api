@@ -23,7 +23,7 @@ router.route('/')
       currency: req.body.currency,
       asset: req.body.asset,
       offset: parseFloat(req.body.offset),
-      strategy: req.body.strategy || 'trailing'
+      type: req.body.type || 'TEST'
     }
     service.create(params).then(result => {
       res.send(result)
