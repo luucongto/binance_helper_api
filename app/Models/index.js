@@ -74,6 +74,8 @@ const TestBalance = sequelize.define('test_balance', {
   currency: Sequelize.STRING,
   currency_num: Sequelize.FLOAT,
   asset_num: Sequelize.FLOAT,
+  initial_currency_num: Sequelize.FLOAT,
+  initial_asset_num: Sequelize.FLOAT,
   offset: {type: Sequelize.FLOAT},
   type: Sequelize.STRING,
   status: Sequelize.STRING

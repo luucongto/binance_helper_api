@@ -38,6 +38,8 @@ class BinanceTestTrade {
             asset: params.asset,
             currency_num: parseFloat(params.currency_num || 0),
             asset_num: parseFloat(params.asset_num || 0),
+            initial_currency_num: parseFloat(params.currency_num || 0),
+            initial_asset_num: parseFloat(params.asset_num || 0),
             offset: parseFloat(params.offset || 0),
             status: 'watching',
             type: params.type
