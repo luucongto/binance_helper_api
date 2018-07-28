@@ -224,6 +224,9 @@ class BinanceBot {
     console.info(`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
     this.order(e).then(response => {
       callback(e, response)
+    }).catch(error => {
+      console.error('Place Order error', error)
+      e.status = 'watching'
     })
   }
 

@@ -155,10 +155,10 @@ class BinanceTestTrade {
     TestBalance.findById(order.balance_id).then(balance => {
       if (order.mode === 'sell') {
         balance.asset_num -= marketResponse.executedQty
-        balance.currency_num += marketResponse.executedQty * marketResponse.price
+        balance.currency_num += (marketResponse.executedQty * marketResponse.price) * 0.999
       } else if (order.mode === 'buy') {
         balance.asset_num += marketResponse.executedQty
-        balance.currency_num -= marketResponse.executedQty * marketResponse.price
+        balance.currency_num -= (marketResponse.executedQty * marketResponse.price) * 1.001
       }
       balance.save().then(balanceObj => {
         self.activeUsers[balanceObj.user_id].socket.emit('auto_order', [balanceObj])
@@ -181,7 +181,7 @@ class BinanceTestTrade {
       user_id: balance.user_id,
       type: balance.type,
       mode: null,
-      price: 0,
+      price: marketPrice,
       status: 'waiting',
       currency: balance.currency,
       asset: balance.asset,
@@ -194,10 +194,12 @@ class BinanceTestTrade {
     if (balance.currency_num > balance.asset_num * marketPrice) {
       newOrder.mode = 'buy'
       newOrder.expect_price *= 0.999
-      newOrder.quantity = balance.currency_num / marketPrice
+      newOrder.price = newOrder.expect_price
+      newOrder.quantity = balance.currency_num / newOrder.expect_price
     } else {
       newOrder.mode = 'sell'
       newOrder.expect_price *= 1.001
+      newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.asset_num
     }
     UserOrder.create(newOrder).then(orderObj => {
