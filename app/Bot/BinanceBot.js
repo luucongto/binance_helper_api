@@ -225,7 +225,7 @@ class BinanceBot {
     this.order(e).then(response => {
       callback(e, response)
     }).catch(error => {
-      console.error('Place Order error', error)
+      console.error('Place Order error', JSON.stringify(e), error)
       e.status = 'watching'
     })
   }

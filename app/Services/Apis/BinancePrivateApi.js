@@ -40,6 +40,7 @@ class BinancePrivateApi {
       }
       let callback = (error, response) => {
         if (error) {
+          console.error('Place Market Error', JSON.stringify(data))
           reject(JSON.parse(error.body).msg)
           return
         }
@@ -57,9 +58,9 @@ class BinancePrivateApi {
         resolve(response)
       }
       if (data.mode === 'sell') {
-        this.privateClient.marketSell(data.pair, data.quantity, callback)
+        this.privateClient.marketSell(data.pair, parseFloat(data.quantity), callback)
       } else if (data.mode === 'buy') {
-        this.privateClient.marketBuy(data.pair, data.quantity, callback)
+        this.privateClient.marketBuy(data.pair, parseFloat(data.quantity), callback)
       }
     })
   }

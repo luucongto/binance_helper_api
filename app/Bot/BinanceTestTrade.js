@@ -202,6 +202,9 @@ class BinanceTestTrade {
       newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.asset_num
     }
+    if (newOrder.quantity > 10) {
+      newOrder.quantity = Math.floor(newOrder.quantity)
+    }
     UserOrder.create(newOrder).then(orderObj => {
       BinanceBot.updateStatus(orderObj)
       BinanceBot.setupOne(orderObj)
