@@ -60,8 +60,8 @@ opts.secretOrKey = config.secret
 passport.use(new JwtStrategy(opts, function (jwtPayload, done) {
   User.findOne({
     where: {
-      id: jwtPayload.id,
-      logged_at: jwtPayload.logged_at
+      id: jwtPayload.id
+      // logged_at: jwtPayload.logged_at
     }
   }).then(user => {
     if (user) {

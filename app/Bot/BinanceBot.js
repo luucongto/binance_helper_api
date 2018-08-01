@@ -3,6 +3,7 @@ import BinancePrivateApi from '../Services/Apis/BinancePrivateApi'
 import BinanceTestTrade from './BinanceTestTrade'
 import {BinanceUser, UserOrder} from '../Models'
 import {Op} from 'sequelize'
+import ApiInfo from './api_info'
 class BinanceBot {
   constructor () {
     // Authenticated client, can make signed calls
@@ -44,7 +45,7 @@ class BinanceBot {
     data.socket.on('update_order', params => {
       switch (params.command) {
         case 'placeOrder':
-          UserOrder.create({
+          self.placeOrder({
             user_id: data.id,
             asset: params.asset,
             currency: params.currency,
@@ -56,9 +57,6 @@ class BinanceBot {
             status: 'waiting',
             offset: parseFloat(params.offset || 0),
             expect_price: parseFloat(params.expect_price || 0)
-          }).then(order => {
-            self.setupOne(order)
-            self.emitOrders(order.user_id, [order])
           })
           break
         case 'updateOrder':
@@ -213,7 +211,7 @@ class BinanceBot {
         delete orders[e.id]
         console.info(`[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
       } else {
-        e.status = 'watching'
+        e.status = 'error'
         e.save()
         console.info(`[${e.type}][false] trigger order ${e.id} market ${e.mode} at ${response.priced} offset ${e.offset} res ${JSON.stringify(response)}`)
       }
@@ -226,7 +224,7 @@ class BinanceBot {
       callback(e, response)
     }).catch(error => {
       console.error('Place Order error', JSON.stringify(e), error)
-      e.status = 'watching'
+      e.status = error
     })
   }
 
@@ -265,6 +263,23 @@ class BinanceBot {
 
   updateStatus (order) {
     this.emitOrders(order.user_id, [order])
+  }
+
+  placeOrder (orderParams) {
+    let self = this
+    let filter = ApiInfo[orderParams.pair]
+    if (orderParams.quantity < filter.minQty || orderParams.quantity > filter.maxQty) {
+      return
+    }
+    let oldQty = orderParams.quantity
+    let newQty = orderParams.quantity / filter.stepPrice
+    if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
+      orderParams.quantity = newQty
+    }
+    UserOrder.create(orderParams).then(orderObj => {
+      self.updateStatus(orderObj)
+      self.setupOne(orderObj)
+    })
   }
 }
 

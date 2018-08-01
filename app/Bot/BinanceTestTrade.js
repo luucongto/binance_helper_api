@@ -18,6 +18,14 @@ class BinanceTestTrade {
       // }
     }
   }
+  emitBalances (userId, balances) {
+    if (!userId) {
+      console.error('BinanceTestTrade Emit order null userid')
+    }
+    if (this.activeUsers[userId] && this.activeUsers[userId].socket) {
+      this.activeUsers[userId].socket.emit('auto_order', balances)
+    }
+  }
   setUser (data) {
     let self = this
     if (this.activeUsers[data.id]) {
@@ -45,7 +53,7 @@ class BinanceTestTrade {
             type: params.type
           }).then(balance => {
             self.addToWatchList(balance)
-            data.socket.emit('auto_order', [balance])
+            self.emitBalances(data.id, [balance])
           })
           break
         case 'cancelOrder':
@@ -53,7 +61,7 @@ class BinanceTestTrade {
             if (balance) {
               balance.status = 'cancel'
               balance.save().then(balance => {
-                data.socket.emit('auto_order', [balance])
+                self.emitBalances(data.id, [balance])
               })
               self.cancelBalance(balance)
             }
@@ -65,7 +73,7 @@ class BinanceTestTrade {
               user_id: data.id
             }
           }).then(balances => {
-            data.socket.emit('auto_order', balances)
+            self.emitBalances(data.id, balances)
           })
           break
       }
@@ -99,7 +107,7 @@ class BinanceTestTrade {
     if (!this.watching[balance.pair]) { this.watching[balance.pair] = {} }
     this.watching[balance.pair][balance.id] = balance
     if (this.activeUsers[balance.user_id] && this.activeUsers[balance.user_id].socket) {
-      this.activeUsers[balance.user_id].socket.emit('auto_order', [balance])
+      this.emitBalances(balance.user_id, [balance])
     }
     let self = this
     if (!this.watchingSockets[balance.pair]) {
@@ -161,7 +169,7 @@ class BinanceTestTrade {
         balance.currency_num -= (marketResponse.executedQty * marketResponse.price) * 1.001
       }
       balance.save().then(balanceObj => {
-        self.activeUsers[balanceObj.user_id].socket.emit('auto_order', [balanceObj])
+        self.emitBalances(balanceObj.user_id, [balanceObj.get()])
       })
       self._placeNewOrder(balance, marketResponse.price)
       return {
@@ -202,13 +210,7 @@ class BinanceTestTrade {
       newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.asset_num
     }
-    if (newOrder.quantity > 10) {
-      newOrder.quantity = Math.floor(newOrder.quantity)
-    }
-    UserOrder.create(newOrder).then(orderObj => {
-      BinanceBot.updateStatus(orderObj)
-      BinanceBot.setupOne(orderObj)
-    })
+    BinanceBot.placeOrder(newOrder)
   }
 }
 
