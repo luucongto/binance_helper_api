@@ -272,7 +272,7 @@ class BinanceBot {
       return
     }
     let oldQty = orderParams.quantity
-    let newQty = orderParams.quantity / filter.stepPrice
+    let newQty = orderParams.quantity - (orderParams.quantity % filter.stepPrice)
     if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
       orderParams.quantity = newQty
     }

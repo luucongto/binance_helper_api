@@ -153,7 +153,7 @@ class BinanceTestTrade {
         // existed order
           console.info('trailing', `Start testing: ${balance.id}  ${balance.currency_num}:${balance.asset_num} ${balance.pair} offset ${balance.offset} ${balance.is_percent ? '%' : '$'} orderId ${orderObj.id}`)
         } else {
-          self._placeNewOrder(balance, price)
+          self._placeNewUserOrder(balance, price)
         }
       })
   }
@@ -171,7 +171,7 @@ class BinanceTestTrade {
       balance.save().then(balanceObj => {
         self.emitBalances(balanceObj.user_id, [balanceObj.get()])
       })
-      self._placeNewOrder(balance, marketResponse.price)
+      self._placeNewUserOrder(balance, marketResponse.price)
       return {
         price: order.price
       }
@@ -183,7 +183,7 @@ class BinanceTestTrade {
     })
   }
 
-  _placeNewOrder (balance, marketPrice) {
+  _placeNewUserOrder (balance, marketPrice) {
     let self = this
     let newOrder = {
       user_id: balance.user_id,
