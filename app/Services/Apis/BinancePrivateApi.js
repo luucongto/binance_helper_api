@@ -40,11 +40,11 @@ class BinancePrivateApi {
       }
       let callback = (error, response) => {
         if (error) {
-          console.error('Place Market Error', JSON.stringify(data))
+          console.error('NODEAPP','Place Market Error', JSON.stringify(data))
           reject(JSON.parse(error.body).msg)
           return
         }
-        console.warn(`Market ${JSON.stringify(data)} response ${JSON.stringify(response)}`)
+        console.warn('NODEAPP',`Market ${JSON.stringify(data)} response ${JSON.stringify(response)}`)
         let total = 0
         if (response.fills) {
           response.fills.forEach(element => {
@@ -78,7 +78,7 @@ class BinancePrivateApi {
     return this._placeOrder(data)
   }
   _placeOrder (data) {
-    console.warn(`Order ${JSON.stringify(data)}`)
+    console.warn('NODEAPP',`Order ${JSON.stringify(data)}`)
     return new Promise((resolve, reject) => {
       if (!this.verifyOrder(data)) {
         reject(new Error('invalid order data'))
@@ -86,12 +86,12 @@ class BinancePrivateApi {
       }
       let callback = (error, response) => {
         if (error) {
-          console.error(`[BinancePrivateApi] ${JSON.stringify(data)} ${JSON.stringify(error.body)}`)
+          console.error('NODEAPP',`[BinancePrivateApi] ${JSON.stringify(data)} ${JSON.stringify(error.body)}`)
           reject(JSON.parse(error.body).msg)
           return
         }
 
-        console.warn(`Order: ${data.id} response: ${JSON.stringify(response)}`)
+        console.warn('NODEAPP',`Order: ${data.id} response: ${JSON.stringify(response)}`)
         resolve(response)
       }
       if (data.mode === 'sell') {

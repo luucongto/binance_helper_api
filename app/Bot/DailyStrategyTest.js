@@ -14,7 +14,7 @@ class DailyStrategyTest {
   start () {
     let self = this
     try {
-      console.log('24h', 'Testing....')
+      console.log('NODEAPP','24h', 'Testing....')
       TestBalance.findAll({
         where: {
           type: '24h'
@@ -26,10 +26,10 @@ class DailyStrategyTest {
           })
         }
       }).catch(e => {
-        console.log('24h', 'Met Error ' + JSON.stringify(e))
+        console.log('NODEAPP','24h', 'Met Error ' + JSON.stringify(e))
       })
     } catch (e) {
-      console.log('24h', 'Met Error ' + JSON.stringify(e))
+      console.log('NODEAPP','24h', 'Met Error ' + JSON.stringify(e))
     }
   }
   setupOne (balance) {
@@ -59,9 +59,9 @@ class DailyStrategyTest {
       this.watching[balance.id] = this.binance.websockets.trades([balance.pair], (trades) => {
         self.testStrategy(trades, balance, order)
       })
-      console.log('24h', `Start testing: ${balance.id}  ${balance.currency}:${balance.asset} ${balance.pair} offset ${balance.offset} ${balance.is_percent ? '%' : '$'} WATCHINGID ${this.watching[balance.id]}`)
+      console.log('NODEAPP','24h', `Start testing: ${balance.id}  ${balance.currency}:${balance.asset} ${balance.pair} offset ${balance.offset} ${balance.is_percent ? '%' : '$'} WATCHINGID ${this.watching[balance.id]}`)
     }).catch(error => {
-      console.error(error)
+      console.error('NODEAPP',error)
     })
   }
   testStrategy (trades, balance, e) {
@@ -108,17 +108,17 @@ class DailyStrategyTest {
       switch (e.mode) {
         case 'sell_dry':
           if (now - e.created_at >= DAY) {
-            console.log('24h', `trigger day order${balance.id} ${balance.pair} market ${e.mode} at ${price}/${e.price} offset ${offset} balances: ${balance.currency}:${balance.asset}`)
+            console.log('NODEAPP','24h', `trigger day order${balance.id} ${balance.pair} market ${e.mode} at ${price}/${e.price} offset ${offset} balances: ${balance.currency}:${balance.asset}`)
             sell(price)
           } else if (now - e.created_at < DAY && price - e.price >= offset) {
-            console.log('24h', `trigger price order${balance.id} ${balance.pair} market ${e.mode} at ${price}/${e.price} offset ${offset} balances: ${balance.currency}:${balance.asset}`)
+            console.log('NODEAPP','24h', `trigger price order${balance.id} ${balance.pair} market ${e.mode} at ${price}/${e.price} offset ${offset} balances: ${balance.currency}:${balance.asset}`)
             sell(price)
           }
           break
         case 'buy_dry':
           if (price > lastPrice) {
             // trigger buy market
-            console.log('24h', `trigger order ${balance.id} ${balance.pair} market ${e.mode} at ${price}/${lastPrice} offset ${offset} balances: ${balance.currency}:${balance.asset}`)
+            console.log('NODEAPP','24h', `trigger order ${balance.id} ${balance.pair} market ${e.mode} at ${price}/${lastPrice} offset ${offset} balances: ${balance.currency}:${balance.asset}`)
             buy(price)
           }
           break

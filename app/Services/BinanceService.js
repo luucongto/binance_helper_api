@@ -21,7 +21,7 @@ class BinanceService {
         throw (new Error('binance user not found'))
       }
     }).catch(error => {
-      console.error('getBinanceApi', error)
+      console.error('NODEAPP','getBinanceApi', error)
       throw (new Error('binance user error'))
     })
   }
@@ -73,7 +73,7 @@ class BinanceService {
       }
       return [result]
     }).catch(error => {
-      console.error(error)
+      console.error('NODEAPP',error)
       throw (new Error('updateOrderStatus'))
     })
 
@@ -81,7 +81,7 @@ class BinanceService {
     // .then(result => {
     //   return result
     // }).catch(error => {
-    //   console.error(error)
+    //   console.error('NODEAPP',error)
     //   throw (new Error('placeOrder'))
     // })
   }
@@ -90,7 +90,7 @@ class BinanceService {
       BinanceBot.addTrailingStopOrder(result, this.binancePrivateApi, true)
       return result
     }).catch(error => {
-      console.error(error)
+      console.error('NODEAPP',error)
       throw (new Error('placeOrder'))
     })
   }

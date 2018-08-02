@@ -25,7 +25,7 @@ class BinanceBot {
   }
   emitOrders (userId, orders) {
     if (!userId) {
-      console.error('Emit order null userid')
+      console.error('NODEAPP','Emit order null userid')
     }
     if (this.activeUsers[userId] && this.activeUsers[userId].socket) {
       this.activeUsers[userId].socket.emit('update_order', orders)
@@ -77,9 +77,9 @@ class BinanceBot {
     })
   }
   start () {
-    console.log('Initializing.... REAL: ' + process.env.REAL_API)
+    console.log('NODEAPP','Initializing.... REAL: ' + process.env.REAL_API)
     let self = this
-    console.log('Setup watching list....')
+    console.log('NODEAPP','Setup watching list....')
     UserOrder.findAll({where: {
       status: {
         [Op.in]: ['waiting', 'watching']
@@ -89,15 +89,15 @@ class BinanceBot {
         }
         return orders
       }).catch(error => {
-        console.error(error)
+        console.error('NODEAPP',error)
         throw (new Error('placeOrder'))
       })
-    console.log('Watching....')
+    console.log('NODEAPP','Watching....')
   }
 
   setupOne (order, api) {
     if (this.watchingSockets[order.pair] && this.watchingSockets[order.pair].orders[order.id]) {
-      console.log(`order ${order.id} duplicated`)
+      console.log('NODEAPP',`order ${order.id} duplicated`)
       return
     }
     let self = this
@@ -209,21 +209,21 @@ class BinanceBot {
           BinanceTestTrade.postPlaceOrder(e, response)
         }
         delete orders[e.id]
-        console.info(`[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
+        console.info('NODEAPP',`[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
       } else {
         e.status = 'error'
         e.save()
-        console.info(`[${e.type}][false] trigger order ${e.id} market ${e.mode} at ${response.priced} offset ${e.offset} res ${JSON.stringify(response)}`)
+        console.info('NODEAPP',`[${e.type}][false] trigger order ${e.id} market ${e.mode} at ${response.priced} offset ${e.offset} res ${JSON.stringify(response)}`)
       }
     }
 
     e.status = 'ordering'
     e.price = price
-    console.info(`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
+    console.info('NODEAPP',`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
     this.order(e).then(response => {
       callback(e, response)
     }).catch(error => {
-      console.error('Place Order error', JSON.stringify(e), error)
+      console.error('NODEAPP','Place Order error', JSON.stringify(e), error)
       e.status = error
     })
   }
@@ -255,7 +255,7 @@ class BinanceBot {
         })
       default:
         return new Promise((resolve, reject) => {
-          console.error('Order error, invalid type! ', orderData)
+          console.error('NODEAPP','Order error, invalid type! ', orderData)
           reject(new Error('Order error, invalid type! '))
         })
     }

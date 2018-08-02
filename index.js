@@ -78,7 +78,7 @@ var server = require('http').createServer(app)
 const socketIO = require('socket.io')
 // const server = express()
 //   // .use((req, res) => res.sendFile(INDEX))
-//   .listen(PORT, () => console.log(`Listening Socket on ${ PORT }`));
+//   .listen(PORT, () => console.log('NODEAPP',`Listening Socket on ${ PORT }`));
 
 const io = socketIO().listen(server)
 
@@ -86,7 +86,7 @@ io.use(socketJwtAuth)
 
 io.on('connection', (socket) => {
   if (socket.request.user) {
-    console.log('Socket Authenticated!!', socket.request.user)
+    console.log('NODEAPP','Socket Authenticated!!', socket.request.user)
     BinanceBot.setUser({
       id: socket.request.user.id,
       socket: socket
@@ -96,7 +96,7 @@ io.on('connection', (socket) => {
       socket: socket
     })
   } else {
-    console.log('Socket Unauthorized!!')
+    console.log('NODEAPP','Socket Unauthorized!!')
   }
 })
 
@@ -104,5 +104,5 @@ setInterval(() => io.emit('server_setting', {
   time: moment().format('MM/DD HH:mm'),
   type: process.env.REAL_API
 }))
-server.listen(PORT, () => console.log(`Listening RESTFUL on ${PORT}`))
+server.listen(PORT, () => console.log('NODEAPP',`Listening RESTFUL on ${PORT}`))
 module.exports = app
