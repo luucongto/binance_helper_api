@@ -25,7 +25,7 @@ class BinanceBot {
   }
   emitOrders (userId, orders) {
     if (!userId) {
-      console.error('NODEAPP','Emit order null userid')
+      return
     }
     if (this.activeUsers[userId] && this.activeUsers[userId].socket) {
       this.activeUsers[userId].socket.emit('update_order', orders)
@@ -77,9 +77,9 @@ class BinanceBot {
     })
   }
   start () {
-    console.log('NODEAPP','Initializing.... REAL: ' + process.env.REAL_API)
+    console.log('NODEAPP', 'Initializing.... REAL: ' + process.env.REAL_API)
     let self = this
-    console.log('NODEAPP','Setup watching list....')
+    console.log('NODEAPP', 'Setup watching list....')
     UserOrder.findAll({where: {
       status: {
         [Op.in]: ['waiting', 'watching']
@@ -89,15 +89,15 @@ class BinanceBot {
         }
         return orders
       }).catch(error => {
-        console.error('NODEAPP',error)
+        console.error('NODEAPP', error)
         throw (new Error('placeOrder'))
       })
-    console.log('NODEAPP','Watching....')
+    console.log('NODEAPP', 'Watching....')
   }
 
   setupOne (order, api) {
     if (this.watchingSockets[order.pair] && this.watchingSockets[order.pair].orders[order.id]) {
-      console.log('NODEAPP',`order ${order.id} duplicated`)
+      console.log('NODEAPP', `order ${order.id} duplicated`)
       return
     }
     let self = this
@@ -150,7 +150,7 @@ class BinanceBot {
               }
               break
             case 'buy':
-              if (e.expect_price - e.offset > price) {
+              if (e.expect_price - e.offset >= price) {
                 e.status = 'watching'
                 self.updateStatus(e)
                 e.save()
@@ -165,11 +165,12 @@ class BinanceBot {
             if (!e.offset) e.offset = price - e.expect_price
             if (e.price + e.offset <= price) {
               e.price = price - e.offset
-              console.debug(`expect order ${e.id} ${e.mode} at ${e.price} offset ${e.offset}`)
+              console.info('NODEAPP', 'expect', `${e.id}\t ${e.user_id}\t ${e.balance_id}\t ${e.binance_order_id}\t ${e.type}\t ${e.price}\t ${e.expect_price}\t ${e.offset}\t ${e.quantity}\t ${e.mode}\t ${e.pair}\t ${e.status}\t ${e.asset}\t ${e.currency}\t`)
+              console.debug('NODEAPP', `expect order ${e.id} ${e.mode} at ${e.price}/${price} offset ${e.offset}`)
               // save to db
               self.updateStatus(e)
               e.save()
-            } else if (e.price > price) {
+            } else if (e.price >= price) {
               // trigger sell market
               self.triggerOrder(e, price, orders)
             }
@@ -179,11 +180,12 @@ class BinanceBot {
             if (!e.offset) e.offset = e.expect_price - price
             if (e.price - e.offset >= price) {
               e.price = price + e.offset
-              console.debug(`expect order ${e.id} ${e.mode} at ${e.price} offset ${e.offset}`)
+              console.info('NODEAPP', 'expect', `${e.id}\t ${e.user_id}\t ${e.balance_id}\t ${e.binance_order_id}\t ${e.type}\t ${e.price}\t ${e.expect_price}\t ${e.offset}\t ${e.quantity}\t ${e.mode}\t ${e.pair}\t ${e.status}\t ${e.asset}\t ${e.currency}\t`)
+              console.debug('NODEAPP', `expect order ${e.id} ${e.mode} at ${e.price}/${price} offset ${e.offset}`)
               // save to db
               self.updateStatus(e)
               e.save()
-            } else if (e.price < price) {
+            } else if (e.price <= price) {
               // trigger buy market
               self.triggerOrder(e, price, orders)
             }
@@ -209,22 +211,23 @@ class BinanceBot {
           BinanceTestTrade.postPlaceOrder(e, response)
         }
         delete orders[e.id]
-        console.info('NODEAPP',`[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
+        console.info('NODEAPP', `[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
       } else {
         e.status = 'error'
         e.save()
-        console.info('NODEAPP',`[${e.type}][false] trigger order ${e.id} market ${e.mode} at ${response.priced} offset ${e.offset} res ${JSON.stringify(response)}`)
+        console.info('NODEAPP', `[${e.type}][false] trigger order ${e.id} market ${e.mode} at ${response.priced} offset ${e.offset} res ${JSON.stringify(response)}`)
       }
     }
 
     e.status = 'ordering'
     e.price = price
-    console.info('NODEAPP',`[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
+    console.info('NODEAPP', `[${e.type}] trigger order ${e.id} market ${e.mode} at ${price} offset ${e.offset} `)
     this.order(e).then(response => {
       callback(e, response)
     }).catch(error => {
-      console.error('NODEAPP','Place Order error', JSON.stringify(e), error)
+      console.error('NODEAPP', 'Place Order error', error, `${e.id}\t ${e.user_id}\t ${e.balance_id}\t ${e.binance_order_id}\t ${e.type}\t ${e.price}\t ${e.expect_price}\t ${e.offset}\t ${e.quantity}\t ${e.mode}\t ${e.pair}\t ${e.status}\t ${e.asset}\t ${e.currency}\t`)
       e.status = error
+      e.save()
     })
   }
 
@@ -255,7 +258,7 @@ class BinanceBot {
         })
       default:
         return new Promise((resolve, reject) => {
-          console.error('NODEAPP','Order error, invalid type! ', orderData)
+          console.error('NODEAPP', 'Order error, invalid type! ', orderData)
           reject(new Error('Order error, invalid type! '))
         })
     }
@@ -272,10 +275,11 @@ class BinanceBot {
       return
     }
     let oldQty = orderParams.quantity
-    let newQty = orderParams.quantity - (orderParams.quantity % filter.stepPrice)
+    let newQty = orderParams.quantity - (orderParams.quantity % filter.stepSize)
     if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
       orderParams.quantity = newQty
     }
+    console.info('NODEAPP', 'place order', JSON.stringify(orderParams), newQty)
     UserOrder.create(orderParams).then(orderObj => {
       self.updateStatus(orderObj)
       self.setupOne(orderObj)

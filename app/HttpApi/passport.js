@@ -20,7 +20,7 @@ passport.deserializeUser(function (id, done) {
   }).then(function (user) {
     done(null, user)
   }).catch(function (err) {
-    console.log('NODEAPP',err)
+    console.log('NODEAPP', err)
   })
 })
 
@@ -47,7 +47,7 @@ passport.use(new LocalStrategy(
         })
       }
     }).catch(err => {
-      console.error('NODEAPP',err)
+      console.error('NODEAPP', err)
       return done(null, false, { message: 'Incorrect username and password' })
     })
   }
@@ -80,7 +80,6 @@ passport.use(new GoogleTokenStrategy({
   // callbackURL: `${process.env.ROOT_URL || 'http://localhost:3000'}/auth/google/callback`
 },
   function (accessToken, refreshToken, profile, done) {
-    console.log('NODEAPP',profile)
     User.findOrCreate({
       where: {
         google_id: profile.id

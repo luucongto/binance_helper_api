@@ -20,7 +20,7 @@ class BinanceTestTrade {
   }
   emitBalances (userId, balances) {
     if (!userId) {
-      console.error('NODEAPP','BinanceTestTrade Emit order null userid')
+      return
     }
     if (this.activeUsers[userId] && this.activeUsers[userId].socket) {
       this.activeUsers[userId].socket.emit('auto_order', balances)
@@ -77,14 +77,14 @@ class BinanceTestTrade {
           })
           break
       }
-      console.info('NODEAPP','auto_order', params)
+      console.info('NODEAPP', 'auto_order', params)
     })
   }
 
   start () {
     let self = this
     try {
-      console.log('NODEAPP','[trailing] Testing....')
+      console.log('NODEAPP', '[trailing] Testing....')
       TestBalance.findAll({
         where: {
           status: 'watching'
@@ -97,10 +97,10 @@ class BinanceTestTrade {
         }
       }).catch(e => {
         self.emptyTimeout += 10000
-        console.info('NODEAPP',`[trailing] Met Error ${JSON.stringify(e)}, restarting...`)
+        console.info('NODEAPP', `[trailing] Met Error ${JSON.stringify(e)}, restarting...`)
       })
     } catch (e) {
-      console.info('NODEAPP',`[trailing] Met Error ${JSON.stringify(e)}, restarting...`)
+      console.info('NODEAPP', `[trailing] Met Error ${JSON.stringify(e)}, restarting...`)
     }
   }
   addToWatchList (balance) {
@@ -151,7 +151,7 @@ class BinanceTestTrade {
       }}}).then(orderObj => {
         if (orderObj) {
         // existed order
-          console.info('NODEAPP','trailing', `Start testing: ${balance.id}  ${balance.currency_num}:${balance.asset_num} ${balance.pair} offset ${balance.offset} ${balance.is_percent ? '%' : '$'} orderId ${orderObj.id}`)
+          console.info('NODEAPP', 'trailing', `Start testing: ${balance.id}  ${balance.currency_num}:${balance.asset_num} ${balance.pair} offset ${balance.offset} ${balance.is_percent ? '%' : '$'} orderId ${orderObj.id}`)
         } else {
           self._placeNewUserOrder(balance, price)
         }
@@ -176,7 +176,7 @@ class BinanceTestTrade {
         price: order.price
       }
     }).catch(error => {
-      console.error('NODEAPP','trailing placeMarket', error)
+      console.error('NODEAPP', 'trailing placeMarket', error)
       return {
         price: 0
       }

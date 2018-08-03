@@ -1,5 +1,6 @@
 import Binance from 'node-binance-api'
 import BinanceApiNode from 'binance-api-node'
+import ApiInfo from '../../../app/Bot/api_info'
 class BinancePrivateApi {
   constructor (apiKey, apiSecret) {
     // Authenticated client, can make signed calls
@@ -32,35 +33,43 @@ class BinancePrivateApi {
     })
   }
 
-  placeMarket (data) {
+  placeMarket (orderParams) {
     return new Promise((resolve, reject) => {
-      if (!this.verifyOrder(data)) {
+      if (!this.verifyOrder(orderParams)) {
         reject(new Error('invalid order data'))
         return
       }
       let callback = (error, response) => {
         if (error) {
-          console.error('NODEAPP','Place Market Error', JSON.stringify(data))
           reject(JSON.parse(error.body).msg)
           return
         }
-        console.warn('NODEAPP',`Market ${JSON.stringify(data)} response ${JSON.stringify(response)}`)
+        console.warn('NODEAPP', `Market ${JSON.stringify(orderParams)} response ${JSON.stringify(response)}`)
         let total = 0
         if (response.fills) {
           response.fills.forEach(element => {
             total += parseFloat(element.price) * parseFloat(element.qty)
           })
         } else {
-          total = data.price
+          total = orderParams.price
           response.executedQty = 1
         }
         response.price = total / parseFloat(response.executedQty)
         resolve(response)
       }
-      if (data.mode === 'sell') {
-        this.privateClient.marketSell(data.pair, parseFloat(data.quantity), callback)
-      } else if (data.mode === 'buy') {
-        this.privateClient.marketBuy(data.pair, parseFloat(data.quantity), callback)
+      let filter = ApiInfo[orderParams.pair]
+      if (orderParams.quantity < filter.minQty || orderParams.quantity > filter.maxQty) {
+        return
+      }
+      let oldQty = orderParams.quantity
+      let newQty = orderParams.quantity - (orderParams.quantity % filter.stepSize)
+      if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
+        orderParams.quantity = newQty
+      }
+      if (orderParams.mode === 'sell') {
+        this.privateClient.marketSell(orderParams.pair, parseFloat(orderParams.quantity), callback)
+      } else if (orderParams.mode === 'buy') {
+        this.privateClient.marketBuy(orderParams.pair, parseFloat(orderParams.quantity), callback)
       }
     })
   }
@@ -78,7 +87,7 @@ class BinancePrivateApi {
     return this._placeOrder(data)
   }
   _placeOrder (data) {
-    console.warn('NODEAPP',`Order ${JSON.stringify(data)}`)
+    console.warn('NODEAPP', `Order ${JSON.stringify(data)}`)
     return new Promise((resolve, reject) => {
       if (!this.verifyOrder(data)) {
         reject(new Error('invalid order data'))
@@ -86,12 +95,12 @@ class BinancePrivateApi {
       }
       let callback = (error, response) => {
         if (error) {
-          console.error('NODEAPP',`[BinancePrivateApi] ${JSON.stringify(data)} ${JSON.stringify(error.body)}`)
+          console.error('NODEAPP', `[BinancePrivateApi] ${JSON.stringify(data)} ${JSON.stringify(error.body)}`)
           reject(JSON.parse(error.body).msg)
           return
         }
 
-        console.warn('NODEAPP',`Order: ${data.id} response: ${JSON.stringify(response)}`)
+        console.warn('NODEAPP', `Order: ${data.id} response: ${JSON.stringify(response)}`)
         resolve(response)
       }
       if (data.mode === 'sell') {
