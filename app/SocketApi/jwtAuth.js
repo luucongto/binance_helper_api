@@ -10,24 +10,23 @@ let authCheck = socketJwtAuth.authenticate({
   if (payload && payload.id) {
     User.findOne({
       where: {
-        id: payload.id,
-        logged_at: payload.logged_at
+        id: payload.id
       }
     }).then(user => {
       if (!user) {
         // return fail with an error message
-        console.log('NODEAPP','jwtAuth no user ', payload)
+        console.log('NODEAPP', 'jwtAuth no user ', payload)
         return done(null, false, 'user does not exist')
       }
       // return success with a user info
       return done(null, {id: user.id})
     }).catch(error => {
         // return error
-      console.log('NODEAPP','jwtauth Error', error)
+      console.log('NODEAPP', 'jwtauth Error', error)
       return done(error)
     })
   } else {
-    console.log('NODEAPP','jwtAuth, no payload')
+    console.log('NODEAPP', 'jwtAuth, no payload')
     return done() // in your connection handler user.logged_in will be false
   }
 })

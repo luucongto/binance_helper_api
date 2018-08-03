@@ -55,6 +55,7 @@ class BinancePrivateApi {
           response.executedQty = 1
         }
         response.price = total / parseFloat(response.executedQty)
+        response.executedQty = parseFloat(response.executedQty)
         console.warn('NODEAPP', `calculated response ${JSON.stringify(response)}`)
         resolve(response)
       }
