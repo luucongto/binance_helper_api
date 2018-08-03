@@ -161,13 +161,15 @@ class BinanceTestTrade {
   postPlaceOrder (order, marketResponse) {
     let self = this
     TestBalance.findById(order.balance_id).then(balance => {
+      console.warn('NODEAPP', 'AUTO', JSON.stringify(balance))
       if (order.mode === 'sell') {
-        balance.asset_num -= marketResponse.executedQty
-        balance.currency_num += (marketResponse.executedQty * marketResponse.price) * 0.999
+        balance.asset_num = parseFloat(balance.asset_num) - marketResponse.executedQty
+        balance.currency_num = parseFloat(balance.currency_num) + (marketResponse.executedQty * marketResponse.price) * 0.999
       } else if (order.mode === 'buy') {
-        balance.asset_num += marketResponse.executedQty
-        balance.currency_num -= (marketResponse.executedQty * marketResponse.price) * 1.001
+        balance.asset_num = parseFloat(balance.asset_num) + marketResponse.executedQty
+        balance.currency_num = parseFloat(balance.currency_num) - (marketResponse.executedQty * marketResponse.price) * 1.001
       }
+      console.warn('NODEAPP', 'AUTO AFTER', JSON.stringify(balance))
       balance.save().then(balanceObj => {
         self.emitBalances(balanceObj.user_id, [balanceObj.get()])
       })

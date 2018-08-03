@@ -44,7 +44,7 @@ class BinancePrivateApi {
           reject(JSON.parse(error.body).msg)
           return
         }
-        console.warn('NODEAPP', `Market ${JSON.stringify(orderParams)} response ${JSON.stringify(response)}`)
+        console.warn('NODEAPP', `OrderMarket ${JSON.stringify(orderParams)}\norg response ${JSON.stringify(response)}`)
         let total = 0
         if (response.fills) {
           response.fills.forEach(element => {
@@ -55,6 +55,7 @@ class BinancePrivateApi {
           response.executedQty = 1
         }
         response.price = total / parseFloat(response.executedQty)
+        console.warn('NODEAPP', `calculated response ${JSON.stringify(response)}`)
         resolve(response)
       }
       let filter = ApiInfo[orderParams.pair]
