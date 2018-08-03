@@ -161,7 +161,7 @@ class BinanceBot {
         if (e.status !== 'watching') return
         switch (e.mode) {
           case 'sell':
-            if (price < e.expect_price) return
+            // if (price < e.expect_price) return
             if (!e.offset) e.offset = price - e.expect_price
             if (e.price + e.offset <= price) {
               e.price = price - e.offset
@@ -176,7 +176,7 @@ class BinanceBot {
             }
             break
           case 'buy':
-            if (price > e.expect_price) return
+            // if (price > e.expect_price) return
             if (!e.offset) e.offset = e.expect_price - price
             if (e.price - e.offset >= price) {
               e.price = price + e.offset
