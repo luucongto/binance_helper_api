@@ -60,9 +60,14 @@ class BinanceBot {
           })
           break
         case 'updateOrder':
+          console.log(params)
           UserOrder.findById(params.id).then(order => {
             if (order) {
-              order.status = params.status
+              if (params.status !== undefined) order.status = params.status
+              if (params.expect_price !== undefined) order.expect_price = params.expect_price
+              if (params.offset !== undefined) order.offset = params.offset
+              if (params.quantity !== undefined) order.quantity = params.quantity
+              if (params.type !== undefined) order.type = params.type
               self.updateOne(order)
               order.save().then(order => {
                 self.emitOrders(order.user_id, [order])

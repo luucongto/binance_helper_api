@@ -26,7 +26,11 @@ class BinancePrivateApi {
     return new Promise((resolve, reject) => {
       this.privateClient.balance((error, balances) => {
         if (error) {
-          reject(JSON.parse(error.body).msg)
+          try {
+            reject(JSON.parse(error.body).msg)
+          } catch (e) {
+            reject(e)
+          }
         }
         resolve(balances)
       })
