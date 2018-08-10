@@ -56,14 +56,21 @@ class BinanceTestTrade {
             self.emitBalances(data.id, [balance])
           })
           break
-        case 'cancelOrder':
+        case 'updateOrder':
           TestBalance.findById(params.id).then(balance => {
             if (balance) {
-              balance.status = 'cancel'
+              balance.currency_num = params.currency_num
+              balance.asset_num = params.asset_num
+              balance.offset = params.offset
+              balance.status = params.status
               balance.save().then(balance => {
                 self.emitBalances(data.id, [balance])
+                if (params.status === 'cancel') {
+                  self.cancelBalance(balance)
+                } else {
+                  self.addToWatchList(balance)
+                }
               })
-              self.cancelBalance(balance)
             }
           })
           break
@@ -173,7 +180,10 @@ class BinanceTestTrade {
       balance.save().then(balanceObj => {
         self.emitBalances(balanceObj.user_id, [balanceObj.get()])
       })
-      self._placeNewUserOrder(balance, marketResponse.price)
+      if (balance.status === 'watching') {
+        self._placeNewUserOrder(balance, marketResponse.price)
+      }
+
       return {
         price: order.price
       }
