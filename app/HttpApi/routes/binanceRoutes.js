@@ -18,7 +18,7 @@ let routes = [
           data: result
         })
       }).catch(error => {
-        console.error('NODEAPP','[BinaneRoutes]', error)
+        console.error('NODEAPP', '[BinaneRoutes]', error)
         res.send({
           success: false,
           error: error
@@ -37,7 +37,7 @@ let routes = [
           data: result
         })
       }).catch(error => {
-        console.error('NODEAPP','[BinaneRoutes]', error)
+        console.error('NODEAPP', '[BinaneRoutes]', error)
         res.send({
           success: false,
           error: error
@@ -59,7 +59,7 @@ let routes = [
           data: result
         })
       }).catch(error => {
-        console.error('NODEAPP','[BinaneRoutes]', error)
+        console.error('NODEAPP', '[BinaneRoutes]', error)
         res.send({
           success: false,
           error: {
@@ -133,7 +133,7 @@ let routes = [
           data: result
         })
       }).catch(error => {
-        console.error('NODEAPP','[BinaneRoutes]', error)
+        console.error('NODEAPP', '[BinaneRoutes]', error)
         res.send({
           success: false,
           error: error
@@ -145,7 +145,7 @@ let routes = [
 
 let getBinanceApi = (req, res, next) => {
   if (!req || !req.user) {
-    console.log('NODEAPP','no user in req')
+    console.log('NODEAPP', 'no user in req')
     res.sendStatus(401)
     return
   }
@@ -153,18 +153,24 @@ let getBinanceApi = (req, res, next) => {
   BinanceUser.findByPrimary(user.id).then(data => {
     if (data) {
       const binanceUser = data.get()
-      const binancePrivateApi = new BinancePrivateApi(binanceUser.api_key, binanceUser.api_secret)
-      req.binancePrivateApi = binancePrivateApi
+      if (binanceUser.api_key && binanceUser.api_secret) {
+        try {
+          const binancePrivateApi = new BinancePrivateApi(binanceUser.api_key, binanceUser.api_secret)
+          req.binancePrivateApi = binancePrivateApi
+        } catch (error) {
+          console.error('NODEAPP', '[BinaneRoutes]', 'getBinanceApi', user.id, error.message)
+        }
+      }
       next()
     } else {
-      console.log('NODEAPP','no user in BinanceUser')
+      console.log('NODEAPP', 'no user in BinanceUser')
       res.send({
         success: false,
         error: 'no user in BinanceUser'
       })
     }
   }).catch(error => {
-    console.error('NODEAPP','[BinaneRoutes]', 'getBinanceApi', error)
+    console.error('NODEAPP', '[BinaneRoutes]', 'getBinanceApi', error.message)
     res.send({
       success: false,
       error: error.message

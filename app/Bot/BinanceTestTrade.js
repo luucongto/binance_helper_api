@@ -2,6 +2,7 @@ import Binance from 'node-binance-api'
 import BinanceBot from './BinanceBot'
 import {Op} from 'sequelize'
 import {TestBalance, UserOrder} from '../Models'
+import Const from '../config/config'
 class BinanceTestTrade {
   constructor () {
     // Authenticated client, can make signed calls
@@ -49,6 +50,8 @@ class BinanceTestTrade {
             initial_currency_num: parseFloat(params.currency_num || 0),
             initial_asset_num: parseFloat(params.asset_num || 0),
             offset: parseFloat(params.offset || 0),
+            mode: parseInt(params.mode),
+            cutloss: parseFloat(params.cutloss),
             status: 'watching',
             type: params.type
           }).then(balance => {
@@ -213,12 +216,24 @@ class BinanceTestTrade {
     }
     if (balance.currency_num > balance.asset_num * marketPrice) {
       newOrder.mode = 'buy'
-      newOrder.expect_price *= 0.999
+      if (balance.mode === Const.MODE.ALWAYS_WATCH) {
+        newOrder.expect_price = newOrder.expect_price + balance.offset
+        newOrder.status = 'watching'
+      } else {
+        newOrder.expect_price *= 0.999
+      }
+
       newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.currency_num / newOrder.expect_price
     } else {
       newOrder.mode = 'sell'
-      newOrder.expect_price *= 1.001
+      if (balance.mode === Const.MODE.ALWAYS_WATCH) {
+        newOrder.expect_price = newOrder.expect_price - balance.offset
+        newOrder.status = 'watching'
+      } else {
+        newOrder.expect_price *= 1.001
+      }
+
       newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.asset_num
     }

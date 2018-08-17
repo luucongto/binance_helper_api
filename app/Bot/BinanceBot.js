@@ -90,9 +90,10 @@ class BinanceBot {
         [Op.in]: ['waiting', 'watching']
       }}}).then(orders => {
         if (orders.length) {
-          orders.forEach(order => self.setupOne(order))
+          let funcs = orders.map(order => new Promise((resolve, reject) => resolve(self.setupOne(order))))
+          return Promise.all(funcs)
         }
-        return orders
+        return []
       }).catch(error => {
         console.error('NODEAPP', error)
         throw (new Error('placeOrder'))
@@ -144,62 +145,69 @@ class BinanceBot {
     let watchs = Object.keys(orders)
     let self = this
     if (watchs.length) {
-      Object.values(orders).forEach(e => {
-        if (e.status === 'waiting') {
-          switch (e.mode) {
-            case 'sell':
-              if (e.expect_price + e.offset <= price) {
-                e.status = 'watching'
-                self.updateStatus(e)
-                e.save()
-              }
-              break
-            case 'buy':
-              if (e.expect_price - e.offset >= price) {
-                e.status = 'watching'
-                self.updateStatus(e)
-                e.save()
-              }
-              break
-          }
-        }
-        if (e.status !== 'watching') return
-        switch (e.mode) {
-          case 'sell':
-            // if (price < e.expect_price) return
-            if (!e.offset) e.offset = price - e.expect_price
-            if (e.price + e.offset <= price) {
-              e.price = price - e.offset
-              console.info('NODEAPP', 'expect', `${e.id}\t ${e.user_id}\t ${e.balance_id}\t ${e.binance_order_id}\t ${e.type}\t ${e.price}\t ${e.expect_price}\t ${e.offset}\t ${e.quantity}\t ${e.mode}\t ${e.pair}\t ${e.status}\t ${e.asset}\t ${e.currency}\t`)
-              console.debug('NODEAPP', `expect order ${e.id} ${e.mode} at ${e.price}/${price} offset ${e.offset}`)
-              // save to db
-              self.updateStatus(e)
-              e.save()
-            } else if (e.price >= price) {
-              // trigger sell market
-              self.triggerOrder(e, price, orders)
-            }
-            break
-          case 'buy':
-            // if (price > e.expect_price) return
-            if (!e.offset) e.offset = e.expect_price - price
-            if (e.price - e.offset >= price) {
-              e.price = price + e.offset
-              console.info('NODEAPP', 'expect', `${e.id}\t ${e.user_id}\t ${e.balance_id}\t ${e.binance_order_id}\t ${e.type}\t ${e.price}\t ${e.expect_price}\t ${e.offset}\t ${e.quantity}\t ${e.mode}\t ${e.pair}\t ${e.status}\t ${e.asset}\t ${e.currency}\t`)
-              console.debug('NODEAPP', `expect order ${e.id} ${e.mode} at ${e.price}/${price} offset ${e.offset}`)
-              // save to db
-              self.updateStatus(e)
-              e.save()
-            } else if (e.price <= price) {
-              // trigger buy market
-              self.triggerOrder(e, price, orders)
-            }
-            break
-        }
+      let funcs = Object.values(orders).map(e => {
+        return new Promise((resolve, reject) => {
+          resolve(self._watchOrder(e, price, orders))
+        })
+      })
+      Promise.all(funcs).then(res => {
+
       })
     } else {
       this.binance.websockets.terminate(this.watchingSockets[symbol].id)
       delete this.watchingSockets[symbol]
+    }
+  }
+  _watchOrder (e, price, orders) {
+    let self = this
+    if (e.status === 'waiting') {
+      switch (e.mode) {
+        case 'sell':
+          if (e.expect_price + e.offset <= price) {
+            e.status = 'watching'
+            self.updateStatus(e)
+            e.save()
+          }
+          break
+        case 'buy':
+          if (e.expect_price - e.offset >= price) {
+            e.status = 'watching'
+            self.updateStatus(e)
+            e.save()
+          }
+          break
+      }
+    }
+    if (e.status !== 'watching') return
+    switch (e.mode) {
+      case 'sell':
+        // if (price < e.expect_price) return
+        if (!e.offset) e.offset = price - e.expect_price
+        if (e.price + e.offset <= price) {
+          e.price = price - e.offset
+          console.debug('NODEAPP', `expect order ${e.id} ${e.mode} at ${e.price}/${price} offset ${e.offset}`)
+          // save to db
+          self.updateStatus(e)
+          e.save()
+        } else if (e.price >= price) {
+          // trigger sell market
+          self.triggerOrder(e, price, orders)
+        }
+        break
+      case 'buy':
+        // if (price > e.expect_price) return
+        if (!e.offset) e.offset = e.expect_price - price
+        if (e.price - e.offset >= price) {
+          e.price = price + e.offset
+          console.debug('NODEAPP', `expect order ${e.id} ${e.mode} at ${e.price}/${price} offset ${e.offset}`)
+          // save to db
+          self.updateStatus(e)
+          e.save()
+        } else if (e.price <= price) {
+          // trigger buy market
+          self.triggerOrder(e, price, orders)
+        }
+        break
     }
   }
   triggerOrder (e, price, orders) {

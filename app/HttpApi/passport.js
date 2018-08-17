@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt'
 const passport = require('passport')
-const {User} = require('../Models/index')
+const {User, BinanceUser} = require('../Models/index')
 const JwtStrategy = require('passport-jwt').Strategy
 var LocalStrategy = require('passport-local').Strategy
 var ExtractJwt = require('passport-jwt').ExtractJwt
@@ -94,6 +94,13 @@ passport.use(new GoogleTokenStrategy({
     }).spread((user, created) => {
       if (!user) {
         return done(null, false, { message: 'Incorrect username and password' })
+      }
+      if (created) {
+        BinanceUser.create({
+          user_id: user.id,
+          api_key: '',
+          api_secret: ''
+        })
       }
       let now = parseInt(new Date().getTime() / 1000)
       user.logged_at = now

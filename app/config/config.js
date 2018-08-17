@@ -1,3 +1,7 @@
 module.exports = {
-  secret: 'thisisjwtsecretkeyanddonotshow'
+  secret: 'thisisjwtsecretkeyanddonotshow',
+  MODE: {
+    WAIT: 0,
+    ALWAYS_WATCH: 1
+  }
 }

@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 require('dotenv').config()
-const connectionString = process.env.CLEARDB_DATABASE_URL || 'mysql://root@localhost:33306/socket?reconnect=true'
+const connectionString = process.env.CLEARDB_DATABASE_URL || 'mysql://root@localhost:3306/socket?reconnect=true'
 console.log('connectionString', connectionString)
 const sequelize = new Sequelize(connectionString, {
   logging: false
@@ -81,15 +81,36 @@ const TestBalance = sequelize.define('test_balance', {
   initial_currency_num: Sequelize.FLOAT,
   initial_asset_num: Sequelize.FLOAT,
   offset: {type: Sequelize.FLOAT},
+  cutloss: {type: Sequelize.FLOAT},
+  mode: {type: Sequelize.INTEGER},
   type: Sequelize.STRING,
   status: Sequelize.STRING
 })
 
+const BinanceTradeHistory = sequelize.define('binance_trade_history', {
+  id: {type: Sequelize.INTEGER, primaryKey: true},
+  asset: Sequelize.STRING,
+  currency: Sequelize.STRING,
+  price: Sequelize.FLOAT,
+  qty: Sequelize.FLOAT,
+  time: Sequelize.BIGINT,
+  isBuyerMaker: Sequelize.BOOLEAN,
+  isBestMatch: Sequelize.BOOLEAN
+}, {
+  timestamps: false,
+  indexes: [
+    { name: 'time', fields: ['time'] },
+    { name: 'assetcurrency', fields: ['asset', 'currency'] },
+    { name: 'isBuyerMaker', fields: ['isBuyerMaker'] }
+  ]
+
+})
 module.exports = {
   sequelize,
   User,
   Room,
   BinanceUser,
   UserOrder,
+  BinanceTradeHistory,
   TestBalance
 }
