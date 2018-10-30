@@ -12,18 +12,23 @@ class BinanceService {
   }
   getBinanceApi () {
     const user = this.req.user.get()
+    let self = this
     return BinanceUser.findByPrimary(user.id).then(data => {
       if (data) {
         const binanceUser = data.get()
         const binancePrivateApi = new BinancePrivateApi(binanceUser.api_key, binanceUser.api_secret)
+        self.binancePrivateApi = binancePrivateApi
         return binancePrivateApi
       } else {
         throw (new Error('binance user not found'))
       }
     }).catch(error => {
-      console.error('NODEAPP','getBinanceApi', error)
+      console.error('NODEAPP', 'getBinanceApi', error)
       throw (new Error('binance user error'))
     })
+  }
+  estimateBalance () {
+    return this.binancePrivateApi.estimateBalance()
   }
   allPrices () {
     return this.binancePrivateApi.allPrices()
@@ -73,7 +78,7 @@ class BinanceService {
       }
       return [result]
     }).catch(error => {
-      console.error('NODEAPP',error)
+      console.error('NODEAPP', error)
       throw (new Error('updateOrderStatus'))
     })
 
@@ -90,7 +95,7 @@ class BinanceService {
       BinanceBot.addTrailingStopOrder(result, this.binancePrivateApi, true)
       return result
     }).catch(error => {
-      console.error('NODEAPP',error)
+      console.error('NODEAPP', error)
       throw (new Error('placeOrder'))
     })
   }

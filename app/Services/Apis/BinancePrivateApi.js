@@ -37,6 +37,40 @@ class BinancePrivateApi {
     })
   }
 
+  estimateBalance (res) {
+    let self = this
+    return new Promise((resolve, reject) => {
+      self.privateClient.balance((error, balances) => {
+        if (error) {
+          try {
+            reject(JSON.parse(error.body).msg)
+          } catch (e) {
+            reject(e)
+          }
+        }
+        let currencies = Object.keys(balances)
+        let totalBTC = 0
+        self.privateClient.prices((error, ticker) => {
+          currencies.forEach(currency => {
+            let value = parseFloat(balances[currency].available) + parseFloat(balances[currency].onOrder)
+            if (value === 0) return
+            if (currency !== 'BTC' && currency !== 'USDT') {
+              totalBTC += (value * parseFloat(ticker[currency + 'BTC']) || 0)
+            } else if (currency === 'USDT') {
+              console.log(value / parseFloat(ticker.BTCUSDT))
+              totalBTC += value / parseFloat(ticker.BTCUSDT)
+            } else {
+              console.log(currency, value)
+              totalBTC += value
+            }
+          })
+          console.log(totalBTC, ticker.BTCUSDT)
+          resolve(totalBTC * parseFloat(ticker.BTCUSDT))
+        })
+      })
+    })
+  }
+
   placeMarket (orderParams) {
     return new Promise((resolve, reject) => {
       if (!this.verifyOrder(orderParams)) {
