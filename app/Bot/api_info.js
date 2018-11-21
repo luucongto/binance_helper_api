@@ -744,6 +744,42 @@ module.exports = {
     maxQty: 90000000.00000000,
     stepSize: 0.10000000
   },
+  BCCSVETH: {
+    filterType: LOT_SIZE,
+    minQty: 0.00100000,
+    maxQty: 10000000.00000000,
+    stepSize: 0.00100000
+  },
+  BCCSVUSDT: {
+    filterType: LOT_SIZE,
+    minQty: 0.00001000,
+    maxQty: 10000000.00000000,
+    stepSize: 0.00001000
+  },
+  BCCSVBNB: {
+    filterType: LOT_SIZE,
+    minQty: 0.00001000,
+    maxQty: 10000000.00000000,
+    stepSize: 0.00001000
+  },
+  BCCABCETH: {
+    filterType: LOT_SIZE,
+    minQty: 0.00100000,
+    maxQty: 10000000.00000000,
+    stepSize: 0.00100000
+  },
+  BCCABCUSDT: {
+    filterType: LOT_SIZE,
+    minQty: 0.00001000,
+    maxQty: 10000000.00000000,
+    stepSize: 0.00001000
+  },
+  BCCABCBNB: {
+    filterType: LOT_SIZE,
+    minQty: 0.00001000,
+    maxQty: 10000000.00000000,
+    stepSize: 0.00001000
+  },
   BCCETH: {
     filterType: LOT_SIZE,
     minQty: 0.00100000,
