@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 require('dotenv').config()
-const connectionString = process.env.CLEARDB_DATABASE_URL || 'mysql://root@localhost:3306/socket?reconnect=true'
+const connectionString = process.env.CLEARDB_DATABASE_URL || 'mysql://root:root@localhost:3306/binance?reconnect=true'
 console.log('connectionString', connectionString)
 const sequelize = new Sequelize(connectionString, {
   logging: false
