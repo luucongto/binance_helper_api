@@ -12,11 +12,12 @@ class MailSender {
   }
 
   send (email, order) {
+    if (order.type !== 'REAL') return
     const mailOptions = {
       from: '"Binance Helper" <noreply@binance.helper>',
       to: email
     }
-    mailOptions.subject = `Your order ${order.mode} ${order.quantity} ${order.pair} has been ${order.status === 'done' ? 'processed' : 'placed'}`
+    mailOptions.subject = `${order.mode} ${order.quantity} ${order.pair} ${order.type}: ${order.status === 'done' ? 'processed' : 'placed'}`
     mailOptions.text = `
     Your order has been ${order.status === 'done' ? 'processed' : 'placed'}
     ================================================
