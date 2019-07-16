@@ -174,10 +174,10 @@ class BinanceTestTrade {
       console.warn('NODEAPP', 'AUTO', JSON.stringify(balance))
       if (order.mode === 'sell') {
         balance.asset_num = parseFloat(balance.asset_num) - marketResponse.executedQty
-        balance.currency_num = parseFloat(balance.currency_num) + (marketResponse.executedQty * marketResponse.price) * 0.999
+        balance.currency_num = parseFloat(balance.currency_num) + (marketResponse.executedQty * marketResponse.price)
       } else if (order.mode === 'buy') {
         balance.asset_num = parseFloat(balance.asset_num) + marketResponse.executedQty
-        balance.currency_num = parseFloat(balance.currency_num) - (marketResponse.executedQty * marketResponse.price) * 1.001
+        balance.currency_num = parseFloat(balance.currency_num) - (marketResponse.executedQty * marketResponse.price)
       }
       console.warn('NODEAPP', 'AUTO AFTER', JSON.stringify(balance))
       balance.save().then(balanceObj => {
@@ -220,7 +220,7 @@ class BinanceTestTrade {
         newOrder.expect_price = newOrder.expect_price + balance.offset
         newOrder.status = 'watching'
       } else {
-        newOrder.expect_price *= 0.999
+        // newOrder.expect_price *= 0.999
       }
 
       newOrder.price = newOrder.expect_price
@@ -231,7 +231,7 @@ class BinanceTestTrade {
         newOrder.expect_price = newOrder.expect_price - balance.offset
         newOrder.status = 'watching'
       } else {
-        newOrder.expect_price *= 1.001
+        // newOrder.expect_price *= 1.001
       }
 
       newOrder.price = newOrder.expect_price
