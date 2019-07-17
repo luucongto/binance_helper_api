@@ -46,6 +46,8 @@ class BinanceBot {
     data.socket.on('update_order', params => {
       switch (params.command) {
         case 'placeOrder':
+
+	console.log('placeOrder', params)	
           self.placeOrder({
             user_id: data.id,
             asset: params.asset,
@@ -289,12 +291,7 @@ class BinanceBot {
     if (orderParams.quantity < filter.minQty || orderParams.quantity > filter.maxQty) {
       return
     }
-    let oldQty = orderParams.quantity
-    let newQty = orderParams.quantity - (orderParams.quantity % filter.stepSize)
-    if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
-      orderParams.quantity = newQty
-    }
-    console.info('NODEAPP', 'place order', JSON.stringify(orderParams), newQty)
+    
     UserOrder.create(orderParams).then(orderObj => {
       self.updateStatus(orderObj)
       self.setupOne(orderObj)

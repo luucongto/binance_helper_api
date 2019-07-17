@@ -4,6 +4,7 @@ services:
     image: node:11
     ports:
      - "8000:8000"
+     - "3000:3000"
     depends_on:
      - db
     environment:
@@ -11,8 +12,9 @@ services:
      - PORT=8000
     volumes:
      - ../:/app/api
+     - ../../react-ignite-coreui:/app/client
     working_dir: /app/api
-    command: bash -c "yarn install && yarn start"
+    command: bash -c "sh start.sh"
     restart: always
   db:
     image: mysql:5.6
