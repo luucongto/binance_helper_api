@@ -23,21 +23,6 @@ class BinancePrivateApi {
     return this.publicClient.prices()
   }
   accountInfo (res) {
-    return new Promise((resolve, reject) => {
-      this.privateClient.balance((error, balances) => {
-        if (error) {
-          try {
-            reject(JSON.parse(error.body).msg)
-          } catch (e) {
-            reject(e)
-          }
-        }
-        resolve(balances)
-      })
-    })
-  }
-
-  estimateBalance (res) {
     let self = this
     return new Promise((resolve, reject) => {
       self.privateClient.balance((error, balances) => {
@@ -48,27 +33,72 @@ class BinancePrivateApi {
             reject(e)
           }
         }
+        var result = {}
         let currencies = Object.keys(balances)
         let totalBTC = 0
         self.privateClient.prices((error, ticker) => {
           currencies.forEach(currency => {
             let value = parseFloat(balances[currency].available) + parseFloat(balances[currency].onOrder)
+            var tickSymbol = `${currency}USDT`
             if (value === 0) return
-            if (currency !== 'BTC' && currency !== 'USDT') {
-              totalBTC += (value * parseFloat(ticker[currency + 'BTC']) || 0)
-            } else if (currency === 'USDT') {
-              console.log(value / parseFloat(ticker.BTCUSDT))
-              totalBTC += value / parseFloat(ticker.BTCUSDT)
-            } else {
-              console.log(currency, value)
-              totalBTC += value
+            // if (currency !== 'BTC' && currency !== 'USDT') {
+            //   totalBTC += (value * parseFloat(ticker[currency + 'BTC']) || 0)
+            // } else if (currency === 'USDT') {
+            //   console.log(value / parseFloat(ticker[tickSymbol]))
+            //   totalBTC += value / parseFloat(ticker[tickSymbol])
+            // } else {
+            //   console.log(currency, value)
+            //   totalBTC += value
+            // }
+            balances[currency].usdtValue = value * parseFloat(ticker[tickSymbol])
+            if (balances[currency].usdtValue > 1) {
+              result[currency] = balances[currency]
             }
           })
           console.log(totalBTC, ticker.BTCUSDT)
-          resolve(totalBTC * parseFloat(ticker.BTCUSDT))
+          resolve(result)
         })
       })
     })
+  }
+
+  async estimateBalance (res) {
+    var balances = await this.accountInfo(res)
+    console.log(balances)
+    var result = 0
+    Object.values(balances).forEach(each => result += each.usdtValue)
+    return result
+    // let self = this
+    // return new Promise((resolve, reject) => {
+    //   self.privateClient.balance((error, balances) => {
+    //     if (error) {
+    //       try {
+    //         reject(JSON.parse(error.body).msg)
+    //       } catch (e) {
+    //         reject(e)
+    //       }
+    //     }
+    //     let currencies = Object.keys(balances)
+    //     let totalBTC = 0
+    //     self.privateClient.prices((error, ticker) => {
+    //       currencies.forEach(currency => {
+    //         let value = parseFloat(balances[currency].available) + parseFloat(balances[currency].onOrder)
+    //         if (value === 0) return
+    //         if (currency !== 'BTC' && currency !== 'USDT') {
+    //           totalBTC += (value * parseFloat(ticker[currency + 'BTC']) || 0)
+    //         } else if (currency === 'USDT') {
+    //           console.log(value / parseFloat(ticker.BTCUSDT))
+    //           totalBTC += value / parseFloat(ticker.BTCUSDT)
+    //         } else {
+    //           console.log(currency, value)
+    //           totalBTC += value
+    //         }
+    //       })
+    //       console.log(totalBTC, ticker.BTCUSDT)
+    //       resolve(totalBTC * parseFloat(ticker.BTCUSDT))
+    //     })
+    //   })
+    // })
   }
 
   placeMarket (orderParams) {
