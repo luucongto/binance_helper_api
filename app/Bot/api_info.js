@@ -762,19 +762,19 @@ module.exports = {
     maxQty: 10000000.00000000,
     stepSize: 0.00001000
   },
-  BCHABCETH: {
+  BCHETH: {
     filterType: LOT_SIZE,
     minQty: 0.00100000,
     maxQty: 10000000.00000000,
     stepSize: 0.00100000
   },
-  BCHABCUSDT: {
+  BCHUSDT: {
     filterType: LOT_SIZE,
     minQty: 0.00001000,
     maxQty: 10000000.00000000,
     stepSize: 0.00001000
   },
-  BCHABCBNB: {
+  BCHBNB: {
     filterType: LOT_SIZE,
     minQty: 0.00001000,
     maxQty: 10000000.00000000,

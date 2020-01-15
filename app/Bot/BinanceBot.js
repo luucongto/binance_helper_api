@@ -5,6 +5,7 @@ import {BinanceUser, UserOrder} from '../Models'
 import {Op} from 'sequelize'
 import ApiInfo from './api_info'
 import MailSender from './MailSender'
+import moment from 'moment'
 class BinanceBot {
   constructor () {
     // Authenticated client, can make signed calls
@@ -47,7 +48,7 @@ class BinanceBot {
       switch (params.command) {
         case 'placeOrder':
 
-	console.log('placeOrder', params)	
+          console.log('placeOrder', params)
           self.placeOrder({
             user_id: data.id,
             asset: params.asset,
@@ -85,28 +86,30 @@ class BinanceBot {
     })
   }
   start () {
-    console.log('NODEAPP', 'Initializing.... REAL: ' + process.env.REAL_API)
+    console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Initializing.... REAL: ' + process.env.REAL_API)
     let self = this
-    console.log('NODEAPP', 'Setup watching list....')
+    console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Setup watching list....')
     UserOrder.findAll({where: {
       status: {
         [Op.in]: ['waiting', 'watching']
       }}}).then(orders => {
+        console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Find orders....', orders.length)
         if (orders.length) {
           let funcs = orders.map(order => new Promise((resolve, reject) => resolve(self.setupOne(order))))
-          return Promise.all(funcs)
+          return Promise.all(funcs).then(() => {
+            console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), `WATCHING ${funcs.length} orders`)
+          })
         }
         return []
       }).catch(error => {
         console.error('NODEAPP', error)
         throw (new Error('placeOrder'))
       })
-    console.log('NODEAPP', 'Watching....')
   }
 
   setupOne (order, api) {
     if (this.watchingSockets[order.pair] && this.watchingSockets[order.pair].orders[order.id]) {
-      console.log('NODEAPP', `order ${order.id} duplicated`)
+      console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), `order ${order.id} duplicated`)
       return
     }
     let self = this
@@ -291,7 +294,7 @@ class BinanceBot {
     if (orderParams.quantity < filter.minQty || orderParams.quantity > filter.maxQty) {
       return
     }
-    
+
     UserOrder.create(orderParams).then(orderObj => {
       self.updateStatus(orderObj)
       self.setupOne(orderObj)

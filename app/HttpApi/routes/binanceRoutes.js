@@ -69,6 +69,53 @@ let routes = [
       })
     }
   },
+  {
+    method: 'post',
+    endpoint: '/tradeHistory',
+    func: async (req, res) => {
+      try {
+        const binanceService = new BinanceService(req)
+        let result = await binanceService.tradeHistory({
+          symbol: req.body.symbol,
+          fromId: req.body.fromId
+        })
+        res.send({
+          success: true,
+          data: result
+        })
+      } catch (error) {
+        console.error('NODEAPP', '[BinaneRoutes]', error)
+        res.send({
+          success: false,
+          error: error
+        })
+      }
+    }
+  },
+  {
+    method: 'post',
+    endpoint: '/apiSetting',
+    func: (req, res) => {
+      const binanceService = new BinanceService(req)
+      binanceService.apiSetting({
+        api_key: req.body.apiKey,
+        api_secret: req.body.apiSecret
+      }).then(result => {
+        res.send({
+          success: true,
+          data: result
+        })
+      }).catch(error => {
+        console.error('NODEAPP', '[BinaneRoutes]', error)
+        res.send({
+          success: false,
+          error: {
+            msg: error
+          }
+        })
+      })
+    }
+  },
   // {
   //   method: 'post',
   //   endpoint: '/placeOrder',

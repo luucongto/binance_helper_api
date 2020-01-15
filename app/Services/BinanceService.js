@@ -99,6 +99,11 @@ class BinanceService {
       throw (new Error('placeOrder'))
     })
   }
+
+  async tradeHistory (params) {
+    let result = await this.binancePrivateApi.tradeHistory(params.symbol, params.fromId)
+    return result
+  }
 }
 
 module.exports = BinanceService
