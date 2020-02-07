@@ -37,11 +37,20 @@ class BinancePrivateApi {
         }
         var result = {}
         let currencies = Object.keys(balances)
+        console.log(balances)
         let totalBTC = 0
         self.privateClient.prices((error, ticker) => {
           currencies.forEach(currency => {
             let value = parseFloat(balances[currency].available) + parseFloat(balances[currency].onOrder)
             var tickSymbol = `${currency}USDT`
+            if (currency === 'USDT') {
+              balances[currency].usdtValue = value
+              result[currency] = balances[currency]
+              return
+            }
+            if (!ApiInfo[tickSymbol]) {
+              return
+            }
             if (value === 0) return
             // if (currency !== 'BTC' && currency !== 'USDT') {
             //   totalBTC += (value * parseFloat(ticker[currency + 'BTC']) || 0)

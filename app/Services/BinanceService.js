@@ -28,16 +28,23 @@ class BinanceService {
     })
   }
   estimateBalance () {
+    if (!this.binancePrivateApi) {
+      return {}
+    }
     return this.binancePrivateApi.estimateBalance()
   }
   allPrices () {
+    if (!this.binancePrivateApi) {
+      return {}
+    }
     return this.binancePrivateApi.allPrices()
   }
-  accountInfo () {
-    return this.binancePrivateApi.accountInfo()
-    .then(result => {
-      return result
-    })
+  async accountInfo () {
+    if (!this.binancePrivateApi) {
+      return {}
+    }
+    let result = await this.binancePrivateApi.accountInfo()
+    return result
   }
   apiSetting (params) {
     if (params.api_key !== '' || params.api_secret !== '') {
