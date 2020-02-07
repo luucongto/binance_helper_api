@@ -199,8 +199,10 @@ class BinancePrivateApi {
     }
     try {
       var history = await this.publicClient.myTrades(data)
+      var price = await this.publicClient.avgPrice({symbol})
       let result = underscore.sortBy(history, 'time').reverse().map(each => {
         return {
+          avgMarketPrice: price.price,
           'symbol': each.symbol, // "BNBUSDT",
           'id': each.id, // 17681672,
           'orderId': each.orderId, // 67373837,
@@ -213,7 +215,7 @@ class BinancePrivateApi {
           'time': moment(each.time).format('YYYY/MM/DD HH:mm:ss'), // 1546073453994,
           'isBuyer': each.isBuyer, // false,
           'isMaker': each.isMaker, // false,
-          'isBestMatch': each.isBestMatch // true
+          'isBestMatch': each.isBestMatch // true,
         }
       })
       return result
