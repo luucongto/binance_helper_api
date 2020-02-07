@@ -2,6 +2,7 @@ import Binance from 'node-binance-api'
 import BinanceApiNode from 'binance-api-node'
 import moment from 'moment'
 import ApiInfo from '../../../app/Bot/api_info'
+import underscore from 'underscore'
 class BinancePrivateApi {
   constructor (apiKey, apiSecret) {
     // Authenticated client, can make signed calls
@@ -187,27 +188,30 @@ class BinancePrivateApi {
     if (fromId !== null) {
       data.fromId = fromId
     }
-    console.log(data)
-    var history = await this.publicClient.myTrades(data)
-
-    let result = history.map(each => {
-      return {
-        'symbol': each.symbol, // "BNBUSDT",
-        'id': each.id, // 17681672,
-        'orderId': each.orderId, // 67373837,
-        'orderListId': each.orderListId, // -1,
-        'price': each.price, // "5.89700000",
-        'qty': each.qty, // "1.62000000",
-        'quoteQty': each.quoteQty, // "9.55314000",
-        'commission': each.commission, // "0.00121363",
-        'commissionAsset': each.commissionAsset, // "BNB",
-        'time': moment(each.time).format('YYYY/MM/DD HH:mm:ss'), // 1546073453994,
-        'isBuyer': each.isBuyer, // false,
-        'isMaker': each.isMaker, // false,
-        'isBestMatch': each.isBestMatch // true
-      }
-    })
-    return result
+    try {
+      var history = await this.publicClient.myTrades(data)
+      let result = underscore.sortBy(history, 'time').reverse().map(each => {
+        return {
+          'symbol': each.symbol, // "BNBUSDT",
+          'id': each.id, // 17681672,
+          'orderId': each.orderId, // 67373837,
+          'orderListId': each.orderListId, // -1,
+          'price': each.price, // "5.89700000",
+          'qty': each.qty, // "1.62000000",
+          'quoteQty': each.quoteQty, // "9.55314000",
+          'commission': each.commission, // "0.00121363",
+          'commissionAsset': each.commissionAsset, // "BNB",
+          'time': moment(each.time).format('YYYY/MM/DD HH:mm:ss'), // 1546073453994,
+          'isBuyer': each.isBuyer, // false,
+          'isMaker': each.isMaker, // false,
+          'isBestMatch': each.isBestMatch // true
+        }
+      })
+      return result
+    } catch (error) {
+      console.log(error)
+      return []
+    }
   }
 }
 module.exports = BinancePrivateApi

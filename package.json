@@ -47,7 +47,8 @@
     "sequelize": "^4.37.10",
     "socket.io": "2.1.1",
     "socket.io-client": "^2.1.1",
-    "socketio-jwt-auth": "^0.0.6"
+    "socketio-jwt-auth": "^0.0.6",
+    "underscore": "^1.9.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
