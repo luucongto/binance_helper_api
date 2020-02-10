@@ -143,7 +143,9 @@ class BinancePrivateApi {
         return
       }
       let oldQty = orderParams.quantity
-      let newQty = orderParams.quantity - (orderParams.quantity % filter.stepSize)
+      const step = 1 / filter.stepSize
+      let newQty = Math.floor(oldQty * step) / step
+      // let newQty = orderParams.quantity - (orderParams.quantity % filter.stepSize)
       if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
         orderParams.quantity = newQty
       }
