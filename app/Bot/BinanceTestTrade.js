@@ -2,6 +2,7 @@ import Binance from 'node-binance-api'
 import BinanceBot from './BinanceBot'
 import {Op} from 'sequelize'
 import {TestBalance, UserOrder} from '../Models'
+import Utils from './Utils'
 import Const from '../config/config'
 class BinanceTestTrade {
   constructor () {
@@ -225,6 +226,7 @@ class BinanceTestTrade {
 
       newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.currency_num / newOrder.expect_price
+      newOrder.quantity = Utils.calculateQty(newOrder)
     } else {
       newOrder.mode = 'sell'
       if (balance.mode === Const.MODE.ALWAYS_WATCH) {
@@ -236,6 +238,7 @@ class BinanceTestTrade {
 
       newOrder.price = newOrder.expect_price
       newOrder.quantity = balance.asset_num
+      newOrder.quantity = Utils.calculateQty(newOrder)
     }
     BinanceBot.placeOrder(newOrder)
   }

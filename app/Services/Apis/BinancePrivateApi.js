@@ -2,6 +2,8 @@ import Binance from 'node-binance-api'
 import BinanceApiNode from 'binance-api-node'
 import moment from 'moment'
 import ApiInfo from '../../../app/Bot/api_info'
+import Utils from '../../Bot/Utils'
+
 import underscore from 'underscore'
 class BinancePrivateApi {
   constructor (apiKey, apiSecret) {
@@ -37,7 +39,6 @@ class BinancePrivateApi {
         }
         var result = {}
         let currencies = Object.keys(balances)
-        console.log(balances)
         let totalBTC = 0
         self.privateClient.prices((error, ticker) => {
           currencies.forEach(currency => {
@@ -66,7 +67,6 @@ class BinancePrivateApi {
               result[currency] = balances[currency]
             }
           })
-          console.log(totalBTC, ticker.BTCUSDT)
           resolve(result)
         })
       })
@@ -138,17 +138,7 @@ class BinancePrivateApi {
         console.warn('NODEAPP', `calculated response ${JSON.stringify(response)}`)
         resolve(response)
       }
-      let filter = ApiInfo[orderParams.pair]
-      if (orderParams.quantity < filter.minQty || orderParams.quantity > filter.maxQty) {
-        return
-      }
-      let oldQty = orderParams.quantity
-      const step = 1 / filter.stepSize
-      let newQty = Math.floor(oldQty * step) / step
-      // let newQty = orderParams.quantity - (orderParams.quantity % filter.stepSize)
-      if (Math.abs((oldQty - newQty)) < oldQty * 0.05) {
-        orderParams.quantity = newQty
-      }
+      orderParams.quantity = Utils.calculateQty(orderParams)
       if (orderParams.mode === 'sell') {
         this.privateClient.marketSell(orderParams.pair, parseFloat(orderParams.quantity), callback)
       } else if (orderParams.mode === 'buy') {
