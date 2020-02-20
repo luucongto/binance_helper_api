@@ -1,6 +1,8 @@
 
 import passport from 'passport'
-var User = require('../../Models').User
+import bcrypt from 'bcrypt'
+const saltRounds = 12
+const {User, BinanceUser} = require('../../Models/index')
 var settings = require('../../config/config')
 var jwt = require('jsonwebtoken')
 var express = require('express')
@@ -22,9 +24,41 @@ var sendToken = function (req, res) {
   return res.json({
     success: true,
     token: req.token,
-    name: req.user.name
+    name: req.user ? req.user.name : ''
   })
 }
+
+router.post('/register',
+    async function (req, res, next) {
+      if (req.body.token !== 'XcnLIg71Yo') {
+        return res.send(401, 'User Not Authenticated')
+      }
+      let user = await User.findOne({
+        where: {
+          username: req.query.username
+        }
+      })
+      if (user) {
+        return res.send(401, 'User Existed')
+      }
+      const password = await bcrypt.hash(req.body.password, saltRounds)
+      user = await User.create({
+        username: req.body.username,
+        password: password,
+        name: req.body.username,
+        email: ''
+      })
+      req.auth = {
+        id: user.id
+      }
+      await BinanceUser.create({
+        user_id: user.id,
+        api_key: '',
+        api_secret: ''
+      })
+      next()
+    }, generateToken, sendToken
+)
 
 router.post('/login',
   passport.authenticate('local'),

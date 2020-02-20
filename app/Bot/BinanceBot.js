@@ -6,6 +6,7 @@ import {Op} from 'sequelize'
 import ApiInfo from './api_info'
 import MailSender from './MailSender'
 import moment from 'moment'
+import Utils from './Utils'
 class BinanceBot {
   constructor () {
     // Authenticated client, can make signed calls
@@ -49,7 +50,7 @@ class BinanceBot {
         case 'placeOrder':
 
           console.log('placeOrder', params)
-          self.placeOrder({
+          let orderParams = {
             user_id: data.id,
             asset: params.asset,
             currency: params.currency,
@@ -61,7 +62,9 @@ class BinanceBot {
             status: 'waiting',
             offset: parseFloat(params.offset || 0),
             expect_price: parseFloat(params.expect_price || 0)
-          })
+          }
+          orderParams.quantity = Utils.calculateQty(orderParams)
+          self.placeOrder(orderParams)
           break
         case 'updateOrder':
           console.log(params)
@@ -72,6 +75,7 @@ class BinanceBot {
               if (params.offset !== undefined) order.offset = params.offset
               if (params.quantity !== undefined) order.quantity = params.quantity
               if (params.type !== undefined) order.type = params.type
+              order.quantity = Utils.calculateQty(order)
               self.updateOne(order)
               order.save().then(order => {
                 self.emitOrders(order.user_id, [order])

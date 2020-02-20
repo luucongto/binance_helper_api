@@ -6,6 +6,7 @@ var router = express.Router()
 router.get('/', (req, res, next) => {
   res.render('index', { title: 'Express' })
 })
+
 router.get('/estimate/:userName', (req, res, next) => {
   let userName = req.params.userName
   console.log('Username ', userName)

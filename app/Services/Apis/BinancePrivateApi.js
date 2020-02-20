@@ -138,7 +138,7 @@ class BinancePrivateApi {
         console.warn('NODEAPP', `calculated response ${JSON.stringify(response)}`)
         resolve(response)
       }
-      orderParams.quantity = Utils.calculateQty(orderParams)
+      // orderParams.quantity = Utils.calculateQty(orderParams)
       if (orderParams.mode === 'sell') {
         this.privateClient.marketSell(orderParams.pair, parseFloat(orderParams.quantity), callback)
       } else if (orderParams.mode === 'buy') {

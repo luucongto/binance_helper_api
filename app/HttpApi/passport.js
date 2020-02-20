@@ -32,12 +32,14 @@ passport.use(new LocalStrategy(
       }
     }).then(user => {
       if (!user) {
+        console.log('not found user')
         return done(null, false, { message: 'Incorrect username and password' })
       } else {
         // check if password matches
         bcrypt.compare(password, user.password, function (err, result) {
           if (err) { return done(err) }
           if (!result) {
+            console.log('Incorrect username and password')
             return done(null, false, { message: 'Incorrect username and password' })
           }
           let now = parseInt(new Date().getTime() / 1000)
