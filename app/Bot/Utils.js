@@ -6,7 +6,7 @@ module.exports = {
       return 0
     }
     let oldQty = orderParams.quantity
-    const step = 1 / filter.stepSize
+    const step = Math.round(1 / filter.stepSize)
     let newQty = Math.floor(oldQty * step) / step
     console.log('calculateQty', oldQty, orderParams.pair, step, newQty)
     return newQty
