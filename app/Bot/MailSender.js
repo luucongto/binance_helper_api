@@ -5,8 +5,8 @@ class MailSender {
     this.mailTransport = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'tolcbinhelper@gmail.com',
-        pass: 'awefd345rwsfa'
+        user: process.env.MAIL_ACCOUNT,
+        pass:  process.env.MAIL_PASS
       }
     })
   }

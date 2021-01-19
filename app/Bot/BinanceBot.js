@@ -233,7 +233,7 @@ class BinanceBot {
         if (e.balance_id) {
           BinanceTestTrade.postPlaceOrder(e, response)
         }
-        MailSender.send('congtoit89@gmail.com', e)
+        // MailSender.send('useremail', e)
         delete orders[e.id]
         console.info('NODEAPP', `[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
       } else {
@@ -302,7 +302,7 @@ class BinanceBot {
     UserOrder.create(orderParams).then(orderObj => {
       self.updateStatus(orderObj)
       self.setupOne(orderObj)
-      MailSender.send('congtoit89@gmail.com', orderObj)
+      // MailSender.send('useremail', orderObj)
     })
   }
 }

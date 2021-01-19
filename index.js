@@ -89,10 +89,12 @@ io.on('connection', (socket) => {
     console.log('NODEAPP','Socket Authenticated!!', socket.request.user)
     BinanceBot.setUser({
       id: socket.request.user.id,
+      user: socket.request.user,
       socket: socket
     })
     BinanceTestTrade.setUser({
       id: socket.request.user.id,
+      user: socket.request.user,
       socket: socket
     })
   } else {
