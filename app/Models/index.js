@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 require('dotenv').config()
-const connectionString = process.env.CLEARDB_DATABASE_URL || 'mysql://root:tolc@localhost:3306/binance?reconnect=true'
+const connectionString = process.env.CLEARDB_DATABASE_URL || 'mysql://tolc:tolc@localhost:3306/binance?reconnect=true'
 console.log('connectionString', connectionString)
 const sequelize = new Sequelize(connectionString, {
   logging: false
@@ -50,13 +50,13 @@ const Room = sequelize.define('room', {
 })
 
 const BinanceUser = sequelize.define('binance_user', {
-  user_id: {type: Sequelize.INTEGER, primaryKey: true},
+  user_id: { type: Sequelize.INTEGER, primaryKey: true },
   api_key: Sequelize.STRING,
   api_secret: Sequelize.STRING
 })
 
 const UserOrder = sequelize.define('user_order', {
-  user_id: {type: Sequelize.INTEGER},
+  user_id: { type: Sequelize.INTEGER },
   balance_id: Sequelize.INTEGER,
   binance_order_id: Sequelize.INTEGER,
   type: Sequelize.STRING,
@@ -72,23 +72,23 @@ const UserOrder = sequelize.define('user_order', {
 })
 
 const TestBalance = sequelize.define('test_balance', {
-  user_id: {type: Sequelize.INTEGER},
-  pair: {type: Sequelize.STRING},
+  user_id: { type: Sequelize.INTEGER },
+  pair: { type: Sequelize.STRING },
   asset: Sequelize.STRING,
   currency: Sequelize.STRING,
   currency_num: Sequelize.FLOAT,
   asset_num: Sequelize.FLOAT,
   initial_currency_num: Sequelize.FLOAT,
   initial_asset_num: Sequelize.FLOAT,
-  offset: {type: Sequelize.FLOAT},
-  cutloss: {type: Sequelize.FLOAT},
-  mode: {type: Sequelize.INTEGER},
+  offset: { type: Sequelize.FLOAT },
+  cutloss: { type: Sequelize.FLOAT },
+  mode: { type: Sequelize.INTEGER },
   type: Sequelize.STRING,
   status: Sequelize.STRING
 })
 
 const BinanceTradeHistory = sequelize.define('binance_trade_history', {
-  id: {type: Sequelize.INTEGER, primaryKey: true},
+  id: { type: Sequelize.INTEGER, primaryKey: true },
   asset: Sequelize.STRING,
   currency: Sequelize.STRING,
   price: Sequelize.FLOAT,

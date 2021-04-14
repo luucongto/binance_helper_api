@@ -1,5 +1,5 @@
 import socketJwtAuth from 'socketio-jwt-auth'
-import {User} from '../Models/index'
+import { User } from '../Models/index'
 var settings = require('../config/config')
 let authCheck = socketJwtAuth.authenticate({
   secret: settings.secret,    // required, used to verify the token's signature
@@ -19,9 +19,9 @@ let authCheck = socketJwtAuth.authenticate({
         return done(null, false, 'user does not exist')
       }
       // return success with a user info
-      return done(null, {id: user.id})
+      return done(null, { id: user.id, email: user.email })
     }).catch(error => {
-        // return error
+      // return error
       console.log('NODEAPP', 'jwtauth Error', error)
       return done(error)
     })

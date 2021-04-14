@@ -6,7 +6,7 @@ import Utils from '../../Bot/Utils'
 
 import underscore from 'underscore'
 class BinancePrivateApi {
-  constructor (apiKey, apiSecret) {
+  constructor(apiKey, apiSecret) {
     // Authenticated client, can make signed calls
     this.privateClient = new Binance().options({
       APIKEY: apiKey,
@@ -20,13 +20,13 @@ class BinancePrivateApi {
       apiSecret: apiSecret
     })
   }
-  verifyOrder (data) {
+  verifyOrder(data) {
     return data.quantity > 0 && data.pair && (data.mode === 'sell' || data.mode === 'buy')
   }
-  allPrices () {
+  allPrices() {
     return this.publicClient.prices()
   }
-  accountInfo (res) {
+  accountInfo(res) {
     let self = this
     return new Promise((resolve, reject) => {
       self.privateClient.balance((error, balances) => {
@@ -49,9 +49,9 @@ class BinancePrivateApi {
               result[currency] = balances[currency]
               return
             }
-            if (!ApiInfo[tickSymbol]) {
-              return
-            }
+            // if (!ApiInfo[tickSymbol]) {
+            //   return
+            // }
             if (value === 0) return
             // if (currency !== 'BTC' && currency !== 'USDT') {
             //   totalBTC += (value * parseFloat(ticker[currency + 'BTC']) || 0)
@@ -73,7 +73,7 @@ class BinancePrivateApi {
     })
   }
 
-  async estimateBalance (res) {
+  async estimateBalance(res) {
     var balances = await this.accountInfo(res)
     console.log(balances)
     var result = 0
@@ -112,7 +112,7 @@ class BinancePrivateApi {
     // })
   }
 
-  placeMarket (orderParams) {
+  placeMarket(orderParams) {
     return new Promise((resolve, reject) => {
       if (!this.verifyOrder(orderParams)) {
         reject(new Error('invalid order data'))
@@ -146,20 +146,20 @@ class BinancePrivateApi {
       }
     })
   }
-  placeLimit (data = {}) {
+  placeLimit(data = {}) {
     data.options = {
       type: 'LIMIT'
     }
     return this._placeOrder(data)
   }
-  placeStoploss (data) {
+  placeStoploss(data) {
     data.options = {
       stopPrice: data.stopPrice,
       type: 'STOP_LOSS'
     }
     return this._placeOrder(data)
   }
-  _placeOrder (data) {
+  _placeOrder(data) {
     console.warn('NODEAPP', `Order ${JSON.stringify(data)}`)
     return new Promise((resolve, reject) => {
       if (!this.verifyOrder(data)) {
@@ -184,14 +184,14 @@ class BinancePrivateApi {
     })
   }
 
-  async tradeHistory (symbol, fromId = null) {
-    let data = {symbol}
+  async tradeHistory(symbol, fromId = null) {
+    let data = { symbol }
     if (fromId !== null) {
       data.fromId = fromId
     }
     try {
       var history = await this.publicClient.myTrades(data)
-      var price = await this.publicClient.avgPrice({symbol})
+      var price = await this.publicClient.avgPrice({ symbol })
       let result = underscore.sortBy(history, 'time').reverse().map(each => {
         return {
           avgMarketPrice: price.price,

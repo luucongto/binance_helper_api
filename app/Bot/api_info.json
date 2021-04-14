@@ -1,0 +1,7640 @@
+{
+  "ETHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "LTCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NEOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "QTUMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EOSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SNTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BNTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BCCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "GASBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "HSRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "OAXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DNTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MCOETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ICNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MCOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WTCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WTCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LRCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LRCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QTUMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "YOYOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OMGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "OMGETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ZRXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZRXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STRATBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STRATETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SNGLSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SNGLSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BQXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BQXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KNCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KNCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FUNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FUNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SNMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SNMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NEOETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "IOTABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IOTAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LINKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "LINKETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XVGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XVGETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SALTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SALTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MDABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MDAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MTLBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MTLETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SUBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SUBETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "EOSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ETCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ETCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MTHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MTHETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ENGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ENGETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZECBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ZECETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ASTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ASTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DASHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DASHETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "OAXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ICNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTGETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EVXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "EVXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "REQBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "REQETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VIBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VIBETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HSRETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TRXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POWRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POWRETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARKETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "YOYOETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XRPBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XRPETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MODBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MODETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ENJBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ENJETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STORJBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STORJETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BNBUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "VENBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "YOYOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POWRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "VENBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VENETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KMDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "KMDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NULSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RCNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RCNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RCNBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NULSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NULSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RDNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RDNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RDNBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XMRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "XMRETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DLTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WTCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DLTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DLTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AMBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AMBETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AMBBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BCCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BATBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BATETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BATBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BCPTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCPTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCPTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GVTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "GVTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CDTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CDTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GXSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GXSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NEOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "NEOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "POEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POEETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QSPBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QSPETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QSPBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XZCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XZCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XZCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LSKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LSKETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LSKBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TNTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FUELBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FUELETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MANABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MANAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DGDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DGDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "IOTABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ADXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ADXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ADXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ADABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ADAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PPTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PPTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CMTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CMTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CMTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XLMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XLMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XLMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CNDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CNDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CNDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LENDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LENDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WABIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WABIETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WABIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LTCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "LTCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TNBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TNBETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WAVESBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WAVESETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WAVESBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "GTOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GTOETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GTOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ICXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ICXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ICXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "OSTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OSTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OSTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ELFBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ELFETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AIONBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AIONETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AIONBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NEBLBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NEBLETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NEBLBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BRDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BRDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BRDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MCOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EDOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "EDOETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WINGSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WINGSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NAVBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NAVETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NAVBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LUNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LUNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRIGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRIGETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRIGBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "APPCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "APPCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "APPCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VIBEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VIBEETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RLCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RLCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "RLCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "INSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "INSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PIVXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PIVXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PIVXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "IOSTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IOSTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CHATBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CHATETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STEEMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STEEMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STEEMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "NANOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NANOETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NANOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "VIABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VIAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "VIABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BLZBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BLZETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BLZBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AEETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RPXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RPXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RPXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NCASHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NCASHETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NCASHBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZILBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZILETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZILBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ONTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ONTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "STORMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STORMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STORMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QTUMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "QTUMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "XEMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XEMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XEMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WANBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WANETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WANBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "WPRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WPRETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QLCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QLCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SYSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SYSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SYSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QLCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GRSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GRSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ADAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ADABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CLOAKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CLOAKETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "GNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GNTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GNTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LOOMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LOOMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LOOMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XRPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BCNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCNETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCNBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "REPBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "REPETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "REPBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "TUSDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ETHTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "TUSDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TUSDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ZENBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ZENETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ZENBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SKYBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SKYETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SKYBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EOSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EOSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CVCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CVCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CVCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "THETABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "THETAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "THETABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XRPBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TUSDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "IOTAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XLMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "IOTXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IOTXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QKCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "QKCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AGIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AGIETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AGIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NXSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NXSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NXSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ENJBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DATABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DATAETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TRXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ETCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ETCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ICXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NPXSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NPXSETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VENUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "KEYBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KEYETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NASBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NASETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NASBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MFTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MFTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MFTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DENTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DENTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARDRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARDRETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARDRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NULSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HOTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HOTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VETBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VETETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VETUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VETBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOCKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOCKETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POLYBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "POLYBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PHXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PHXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PHXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "GOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PAXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PAXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "PAXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PAXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RVNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RVNBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DCRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DCRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "USDCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MITHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MITHBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BCHABCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BCHSVBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BCHABCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHSVUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EOSPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XLMPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RENBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RENBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BNBTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XRPTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EOSTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XLMTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BNBUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EOSUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XLMUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "USDCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ADATUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TRXTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "NEOTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TRXXRP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XZCXRP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "PAXTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDCTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDCPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WAVESUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WAVESTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WAVESPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WAVESUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BCHABCTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHABCPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHABCUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHSVTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHSVPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHSVUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "TRXPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TRXUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BNBUSDS": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCUSDS": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "USDSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDSPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDSTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDSUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTTPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTTTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BTTUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONGBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ONGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONGUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HOTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HOTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZILUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ZRXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ZRXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FETBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FETBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FETUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BATUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XMRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "XMRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ZECBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ZECUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ZECPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ZECTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ZECUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "IOSTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IOSTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CELRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CELRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CELRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ADAPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ADAUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "NEOPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "NEOUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DASHBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DASHUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "NANOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "OMGBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "OMGUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "THETAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ENJUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MITHUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MATICBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MATICBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MATICUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ATOMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ATOMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ATOMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ATOMUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ATOMPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ATOMTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ETCUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ETCPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ETCTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BATUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BATPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BATTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PHBBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PHBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PHBUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "PHBTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "PHBPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TFUELBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TFUELBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TFUELUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TFUELUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TFUELTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TFUELPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ONETUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ONEPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ONEUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FTMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FTMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FTMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FTMTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FTMPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FTMUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BCPTTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BCPTPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BCPTUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ALGOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ALGOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ALGOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ALGOTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ALGOPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ALGOUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDSBUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDSBUSDS": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "GTOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "GTOPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "GTOTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "GTOUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ERDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ERDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ERDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ERDPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ERDUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOGEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOGEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOGEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOGEPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOGEUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DUSKBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DUSKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DUSKUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DUSKUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DUSKPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BGBPUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ANKRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ANKRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ANKRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ANKRTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ANKRPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ANKRUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ONTPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ONTUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WINBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WINBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WINUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WINUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TUSDBTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NPXSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NPXSUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COCOSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "COCOSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COCOSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MTLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TOMOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TOMOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TOMOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TOMOUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PERLBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PERLBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PERLUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "PERLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DENTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MFTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KEYUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STORMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DOCKUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WANUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FUNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CVCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTTTRX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "WINTRX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CHZBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CHZBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CHZUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BANDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BANDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BANDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "BUSDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BEAMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BEAMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BEAMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XTZBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XTZBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XTZUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "RENUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RVNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HBARBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HBARBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HBARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "NKNBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NKNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NKNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XRPBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ETHBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHABCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LINKBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ETCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "STXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "KAVABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "KAVABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KAVAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BUSDNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "922320.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BTCNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "500.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ARPABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARPABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ARPAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TRXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EOSBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "IOTXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RLCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MCOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "XLMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ADABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CTXCBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CTXCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CTXCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BCHBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BCHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BCHUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHUSDC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHTUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHPAX": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BCHBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BTCRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "900.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BNBRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TROYBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TROYBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TROYUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BUSDRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "QTUMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "VETBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VITEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VITEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VITEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FTTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FTTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FTTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BTCTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "BNBTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BUSDTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ETHTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "45000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "XRPEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "EURBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EURUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "OGNBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "OGNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OGNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DREPBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DREPBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DREPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BULLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "BULLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "BEARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BEARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ETHBULLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHBULLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHBEARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ETHBEARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "TCTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TCTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TCTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WRXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WRXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "WRXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ICXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTSBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "LSKUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LTOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LTOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LTOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ATOMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DASHBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "NEOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WAVESBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XTZBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EOSBULLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "EOSBULLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "EOSBEARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "EOSBEARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPBULLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPBULLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPBEARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPBEARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BATBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ENJBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "NANOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ONTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "RVNBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "STRATBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STRATBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "STRATUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AIONBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AIONUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MBLBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MBLBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MBLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COTIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COTIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "COTIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ALGOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TOMOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XMRBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ZECBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBBULLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBBULLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBBEARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBBEARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "STPTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STPTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STPTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCZAR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "900.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHZAR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBZAR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTZAR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BUSDZAR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "100.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "8000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WTCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DATABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DATAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XZCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SOLBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SOLBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SOLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SOLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCIDRT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "BNBIDRT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "USDTIDRT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BUSDIDRT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CTSIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CTSIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CTSIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CTSIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HIVEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HIVEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HIVEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CHRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CHRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CHRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "GXSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ARDRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ERDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LENDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HBARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MATICBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "WRXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ZILBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MDTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MDTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "MDTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "STMXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STMXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STMXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "STMXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KNCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "KNCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "REPBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "REPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "LRCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "LRCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "IQBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IQBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "PNTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCGBP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHGBP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "XRPGBP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BNBGBP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "GBPBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DGBBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DGBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DGBBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCUAH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "900.00000000",
+    "stepSize": "0.00000100"
+  },
+  "USDTUAH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "COMPBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "COMPBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "COMPBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "COMPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BTCBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BUSDBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BKRWUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BKRWBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SCUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ZENUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SXPBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SXPBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SXPBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SNXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SNXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SNXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SNXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ETHUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ETHDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ADAUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ADADOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "VTHOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VTHOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VTHOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DCRBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DGBUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "GBPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STORJBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SXPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "IRISBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IRISBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IRISBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "MKRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "MKRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "MKRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "MKRBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "DAIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DAIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DAIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DAIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "RUNEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RUNEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RUNEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MANABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DOGEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LENDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ZRXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DCRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "STORJUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XRPBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ADABKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BTCAUD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHAUD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "AUDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FIOBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FIOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FIOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XTZUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XTZDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AVABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "AVABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AVABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BUSDBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "IOTABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "MANAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XRPAUD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BNBAUD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "AUDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BALBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BALBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BALBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "YFIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "10000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "YFIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "YFIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "YFIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "BLZBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "KMDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BALUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BLZUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "IRISUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "KMDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCDAI": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ETHDAI": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "BNBDAI": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "USDTDAI": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BUSDDAI": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "JSTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "JSTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "JSTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "JSTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SRMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SRMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SRMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SRMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ANTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ANTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ANTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ANTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CRVBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CRVBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CRVBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "CRVUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SANDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SANDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SANDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SANDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OCEANBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "OCEANBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OCEANBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "OCEANUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NMRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NMRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "NMRBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "NMRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DOTBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DOTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DOTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DOTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LUNABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "LUNABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LUNABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LUNAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "IDEXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "IDEXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RSRBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RSRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RSRBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "RSRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "PAXGBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "PAXGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "PAXGBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "PAXGUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "WNXMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WNXMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WNXMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WNXMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TRBBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TRBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TRBBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TRBUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ETHNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "900.00000000",
+    "stepSize": "0.00001000"
+  },
+  "DOTBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "LINKAUD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SXPAUD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BZRXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BZRXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BZRXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BZRXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WBTCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "WBTCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "SUSHIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SUSHIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SUSHIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SUSHIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "YFIIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "10000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "YFIIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "YFIIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "YFIIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "KSMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "KSMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "KSMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "KSMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "EGLDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EGLDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "EGLDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "EGLDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DIABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DIABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DIABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "DIAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "RUNEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FIOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "UMABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "UMAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "EOSUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "EOSDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRXUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRXDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XRPUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XRPDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DOTUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DOTDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SRMBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ONEBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "LINKTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "922320.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BELBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BELBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BELBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BELUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WINGBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "WINGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SWRVBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SWRVBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WINGBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "WINGUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "LTCUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LTCDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LENDBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SXPEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "CREAMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CREAMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "UNIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "UNIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "UNIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "UNIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NBSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "NBSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "OXTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OXTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SUNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "SUNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "AVAXBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "AVAXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "AVAXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AVAXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HNTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HNTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BAKEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "BURGERBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SXPBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FLMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FLMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FLMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FLMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SCRTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SCRTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CAKEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CAKEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SPARTABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "UNIUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "UNIDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ORNBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ORNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRXNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "922320.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SXPTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "UTKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "UTKUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XVSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XVSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XVSBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "XVSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ALPHABNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ALPHABTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ALPHABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ALPHAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "VIDTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "VIDTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AAVEBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "USDTBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AAVEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AAVEETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "AAVEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "AAVEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "AAVEBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "NEARBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "NEARBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NEARBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "NEARUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SXPUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SXPDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DOTBKRW": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9200.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SXPGBP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FILBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "FILBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FILBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FILUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FILUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FILDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "YFIUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "YFIDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "INJBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "INJBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "INJBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "INJUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AERGOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AERGOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "LINKEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ONEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "EASYETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AUDIOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AUDIOBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "AUDIOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CTKBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CTKBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CTKBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CTKUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BCHUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BCHDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BOTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "BOTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "ETHBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "45000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "DOTEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "AKROBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AKROUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "KP3RBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "KP3RBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "AXSBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AXSBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "AXSBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "AXSUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HARDBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HARDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "HARDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HARDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BNBBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "45000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "RENBTCBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "RENBTCETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "DNTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DNTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SLPETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ADAEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "LTCNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "900.00000000",
+    "stepSize": "0.00001000"
+  },
+  "CVPETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CVPBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STRAXBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "STRAXETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STRAXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "STRAXUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FORBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FORBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "UNFIBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "UNFIBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "UNFIBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "UNFIUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FRONTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "FRONTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BCHABUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ROSEBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "ROSEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "ROSEUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "AVAXTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BUSDBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AVAUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SYSBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "XEMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "HEGICETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "HEGICBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AAVEUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "AAVEDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PROMBNB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "PROMBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XRPBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XRPNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "922320.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SKLBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SKLBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "SKLUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "BCHEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "YFIEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00000100",
+    "maxQty": "9000.00000000",
+    "stepSize": "0.00000100"
+  },
+  "ZILBIDR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SUSDBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SUSDETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "SUSDUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "COVERETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "COVERBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "GLMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GLMETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GHSTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GHSTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SUSHIUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "SUSHIDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XLMUPUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "XLMDOWNUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "920000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "45000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LINKNGN": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "900.00000000",
+    "stepSize": "0.00001000"
+  },
+  "LTCRUB": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "TRXTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XLMEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DFETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "DFBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "GRTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GRTETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "GRTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "JUVBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "JUVBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "JUVUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "PSGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PSGBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "PSGUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BUSDBVND": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "USDTBVND": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "1000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "1INCHBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "1INCHUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "REEFBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "REEFUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "OGBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "OGUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ATMBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ATMUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "ASRBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "ASRUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "CELOBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "CELOUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "RIFBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "RIFUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CHZTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "XLMTRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "LINKGBP": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "GRTEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCSTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "BTCSTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BTCSTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "TRUBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "TRUBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TRUUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DEXEETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "DEXEBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "EOSEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "LTCBRL": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00001000",
+    "maxQty": "45000.00000000",
+    "stepSize": "0.00001000"
+  },
+  "USDCBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TUSDBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "PAXBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "CKBBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CKBBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "CKBUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TWTBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "1.00000000"
+  },
+  "TWTBUSD": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "TWTUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "900000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FIROBTC": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FIROETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.01000000",
+    "maxQty": "90000000.00000000",
+    "stepSize": "0.01000000"
+  },
+  "FIROUSDT": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00100000",
+    "maxQty": "90000.00000000",
+    "stepSize": "0.00100000"
+  },
+  "BETHETH": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.00010000",
+    "maxQty": "100000.00000000",
+    "stepSize": "0.00010000"
+  },
+  "DOGEEUR": {
+    "filterType": "LOT_SIZE",
+    "minQty": "0.10000000",
+    "maxQty": "9000000.00000000",
+    "stepSize": "0.10000000"
+  },
+  "DOGETRY": {
+    "filterType": "LOT_SIZE",
+    "minQty": "1.00000000",
+    "maxQty": "10000000.00000000",
+    "stepSize": "1.00000000"
+  }
+}

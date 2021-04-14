@@ -1,18 +1,17 @@
 import nodemailer from 'nodemailer'
 
 class MailSender {
-  constructor () {
+  constructor() {
     this.mailTransport = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
         user: process.env.MAIL_ACCOUNT,
-        pass:  process.env.MAIL_PASS
+        pass: process.env.MAIL_PASS
       }
     })
   }
 
-  send (email, order) {
-    if (order.type !== 'REAL') return
+  send(email, order) {
     const mailOptions = {
       from: '"Binance Helper" <noreply@binance.helper>',
       to: email
@@ -34,11 +33,11 @@ class MailSender {
       BinanceOrderId: ${order.binance_order_id}
     `
     return this.mailTransport.sendMail(mailOptions)
-    .then(() => {
-      console.log('Success send mail to ', email)
-    }).catch(error => {
-      console.log('Error when send mail', email, JSON.stringify(order), error)
-    })
+      .then(() => {
+        console.log('Success send mail to ', email)
+      }).catch(error => {
+        console.log('Error when send mail', email, JSON.stringify(order), error)
+      })
   }
 }
 

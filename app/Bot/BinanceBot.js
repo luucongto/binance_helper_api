@@ -1,14 +1,14 @@
 import Binance from 'node-binance-api'
 import BinancePrivateApi from '../Services/Apis/BinancePrivateApi'
 import BinanceTestTrade from './BinanceTestTrade'
-import {BinanceUser, UserOrder} from '../Models'
-import {Op} from 'sequelize'
+import { BinanceUser, UserOrder } from '../Models'
+import { Op } from 'sequelize'
 import ApiInfo from './api_info'
 import MailSender from './MailSender'
 import moment from 'moment'
 import Utils from './Utils'
 class BinanceBot {
-  constructor () {
+  constructor() {
     // Authenticated client, can make signed calls
     this.binance = new Binance()
     this.pairs = []
@@ -16,7 +16,7 @@ class BinanceBot {
     this.activeUsers = {}
     this.watch = this.watch.bind(this)
   }
-  _refresh (userId) {
+  _refresh(userId) {
     let self = this
     UserOrder.findAll({
       where: {
@@ -26,7 +26,7 @@ class BinanceBot {
       self.emitOrders(userId, orders)
     })
   }
-  emitOrders (userId, orders) {
+  emitOrders(userId, orders) {
     if (!userId) {
       return
     }
@@ -34,13 +34,16 @@ class BinanceBot {
       this.activeUsers[userId].socket.emit('update_order', orders)
     }
   }
-  setUser (data) {
+  setUser(data) {
     let self = this
+    console.log(data.user)
     if (this.activeUsers[data.id]) {
       this.activeUsers[data.id].socket = data.socket
+      this.activeUsers[data.id].user = data.user
     } else {
       this.activeUsers[data.id] = {
         socket: data.socket,
+        user: data.user,
         api: null
       }
     }
@@ -75,6 +78,7 @@ class BinanceBot {
               if (params.offset !== undefined) order.offset = params.offset
               if (params.quantity !== undefined) order.quantity = params.quantity
               if (params.type !== undefined) order.type = params.type
+              if (params.price !== undefined) order.type = params.price
               order.quantity = Utils.calculateQty(order)
               self.updateOne(order)
               order.save().then(order => {
@@ -89,36 +93,39 @@ class BinanceBot {
       }
     })
   }
-  start () {
+  start() {
     console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Initializing.... REAL: ' + process.env.REAL_API)
     let self = this
     console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Setup watching list....')
-    UserOrder.findAll({where: {
-      status: {
-        [Op.in]: ['waiting', 'watching']
-      }}}).then(orders => {
-        console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Find orders....', orders.length)
-        if (orders.length) {
-          let funcs = orders.map(order => new Promise((resolve, reject) => resolve(self.setupOne(order))))
-          return Promise.all(funcs).then(() => {
-            console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), `WATCHING ${funcs.length} orders`)
-          })
+    UserOrder.findAll({
+      where: {
+        status: {
+          [Op.in]: ['waiting', 'watching']
         }
-        return []
-      }).catch(error => {
-        console.error('NODEAPP', error)
-        throw (new Error('placeOrder'))
-      })
+      }
+    }).then(orders => {
+      console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), 'Find orders....', orders.length)
+      if (orders.length) {
+        let funcs = orders.map(order => new Promise((resolve, reject) => resolve(self.setupOne(order))))
+        return Promise.all(funcs).then(() => {
+          console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), `WATCHING ${funcs.length} orders`)
+        })
+      }
+      return []
+    }).catch(error => {
+      console.error('NODEAPP', error)
+      throw (new Error('placeOrder'))
+    })
   }
 
-  setupOne (order, api) {
+  setupOne(order, api) {
     if (this.watchingSockets[order.pair] && this.watchingSockets[order.pair].orders[order.id]) {
       console.log('NODEAPP', moment().format('MM/DD HH:mm:ss'), `order ${order.id} duplicated`)
       return
     }
     let self = this
     if (!this.activeUsers[order.user_id]) {
-      this.activeUsers[order.user_id] = {socket: null, api: null}
+      this.activeUsers[order.user_id] = { socket: null, api: null }
     }
     if (api) {
       this.activeUsers[order.user_id].api = api
@@ -138,14 +145,14 @@ class BinanceBot {
     }
   }
 
-  updateOne (order) {
+  updateOne(order) {
     if (this.watchingSockets[order.pair] && this.watchingSockets[order.pair].orders[order.id]) {
       this.watchingSockets[order.pair].orders[order.id] = order
       return true
     }
     return false
   }
-  watch (trades) {
+  watch(trades) {
     let {
       s: symbol,
       p: price
@@ -168,7 +175,7 @@ class BinanceBot {
       delete this.watchingSockets[symbol]
     }
   }
-  _watchOrder (e, price, orders) {
+  _watchOrder(e, price, orders) {
     let self = this
     if (e.status === 'waiting') {
       switch (e.mode) {
@@ -220,7 +227,7 @@ class BinanceBot {
         break
     }
   }
-  triggerOrder (e, price, orders) {
+  triggerOrder(e, price, orders) {
     let self = this
     let callback = (e, response) => {
       response.price = parseFloat(response.price)
@@ -233,7 +240,14 @@ class BinanceBot {
         if (e.balance_id) {
           BinanceTestTrade.postPlaceOrder(e, response)
         }
-        // MailSender.send('useremail', e)
+        const user = this.activeUsers[e.user_id.toString()].user
+        const email = user ? user.email : null
+        if (email) {
+          MailSender.send(email, e)
+        } else {
+          console.error('MAILSENDER', `email not found ${e.user_id}`)
+        }
+
         delete orders[e.id]
         console.info('NODEAPP', `[${e.type}][success] trigger order ${e.id} market ${e.mode} at ${response.price} offset ${e.offset} orderid ${response.orderId}`)
       } else {
@@ -255,7 +269,7 @@ class BinanceBot {
     })
   }
 
-  _mockPlaceMarket (orderData) {
+  _mockPlaceMarket(orderData) {
     return new Promise((resolve, reject) => {
       resolve({
         executedQty: orderData.quantity,
@@ -263,11 +277,11 @@ class BinanceBot {
       })
     })
   }
-  order (orderData) {
-    if (!process.env.REAL_API) {
+  order(orderData) {
+    if (process.env.REAL_API !== true) {
+      //send email
       return this._mockPlaceMarket(orderData)
     }
-
     switch (orderData.type) {
       case 'TEST':
         return this._mockPlaceMarket(orderData)
@@ -288,11 +302,11 @@ class BinanceBot {
     }
   }
 
-  updateStatus (order) {
+  updateStatus(order) {
     this.emitOrders(order.user_id, [order])
   }
 
-  placeOrder (orderParams) {
+  placeOrder(orderParams) {
     let self = this
     let filter = ApiInfo[orderParams.pair]
     if (orderParams.quantity < filter.minQty || orderParams.quantity > filter.maxQty) {
